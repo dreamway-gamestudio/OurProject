@@ -1,0 +1,974 @@
+fileFormatVersion: 2
+guid: 71da2a947572d2c4c88b4ce977f5b48c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4717044124256639101
+    second: Stars_Dices_0
+  - first:
+      213: -8389145871536666502
+    second: Stars_Dices_1
+  - first:
+      213: -1809471283460636146
+    second: Stars_Dices_2
+  - first:
+      213: -5807234676372462821
+    second: Stars_Dices_3
+  - first:
+      213: 8603160505159105860
+    second: Stars_Dices_4
+  - first:
+      213: -2410227964838502042
+    second: Stars_Dices_5
+  - first:
+      213: -9155097260658884526
+    second: Stars_Dices_6
+  - first:
+      213: -8948958877026439630
+    second: Stars_Dices_7
+  - first:
+      213: 1903017541352537016
+    second: Stars_Dices_8
+  - first:
+      213: 4084642202252821894
+    second: Stars_Dices_9
+  - first:
+      213: 8243701044785755756
+    second: Stars_Dices_10
+  - first:
+      213: -2565760496782051132
+    second: Stars_Dices_11
+  - first:
+      213: -5684977882527712046
+    second: Stars_Dices_12
+  - first:
+      213: 8569289211996861689
+    second: Stars_Dices_13
+  - first:
+      213: 870980140916069352
+    second: Stars_Dices_14
+  - first:
+      213: 193176432600771685
+    second: Stars_Dices_15
+  - first:
+      213: -6630902289877134813
+    second: Stars_Dices_16
+  - first:
+      213: 1975287422742222840
+    second: Stars_Dices_17
+  - first:
+      213: 4489440098211304003
+    second: Stars_Dices_18
+  - first:
+      213: 8179397901546464783
+    second: Stars_Dices_19
+  - first:
+      213: -2658167182444643549
+    second: Stars_Dices_20
+  - first:
+      213: 8241176003736601001
+    second: Stars_Dices_21
+  - first:
+      213: -3219747625638491332
+    second: Stars_Dices_22
+  - first:
+      213: 3031486943935263423
+    second: Stars_Dices_23
+  - first:
+      213: 7736851534968192282
+    second: Stars_Dices_24
+  - first:
+      213: 4171946852710503459
+    second: Stars_Dices_25
+  - first:
+      213: 3188618524207815835
+    second: Stars_Dices_26
+  - first:
+      213: 3814423058019495122
+    second: Stars_Dices_27
+  - first:
+      213: -4329026052015745443
+    second: Stars_Dices_28
+  - first:
+      213: -7489495744632980981
+    second: Stars_Dices_29
+  - first:
+      213: 726171028429822977
+    second: Stars_Dices_0
+  - first:
+      213: -8800375999498712187
+    second: Stars_Dices_1
+  - first:
+      213: -8014870981030072838
+    second: Stars_Dices_2
+  - first:
+      213: 7079607411291547435
+    second: Stars_Dices_3
+  - first:
+      213: 7550114377997853839
+    second: Stars_Dices_4
+  - first:
+      213: -2516287434908964953
+    second: Stars_Dices_5
+  - first:
+      213: 7325429814242200402
+    second: Stars_Dices_6
+  - first:
+      213: -4587356546506834565
+    second: Stars_Dices_7
+  - first:
+      213: -8645339663675297295
+    second: Stars_Dices_8
+  - first:
+      213: 4234404871061179217
+    second: Stars_Dices_9
+  - first:
+      213: 6058202665822317259
+    second: Stars_Dices_10
+  - first:
+      213: -3053357236422809721
+    second: Stars_Dices_11
+  - first:
+      213: 5050097918680159918
+    second: Stars_Dices_12
+  - first:
+      213: -558241729294957472
+    second: Stars_Dices_13
+  - first:
+      213: -2056708661081038236
+    second: Stars_Dices_14
+  - first:
+      213: -8241109591631728496
+    second: Stars_Dices_15
+  - first:
+      213: -1743864149620365950
+    second: Stars_Dices_16
+  - first:
+      213: -5749826062102644432
+    second: Stars_Dices_17
+  - first:
+      213: 322130583787238971
+    second: Stars_Dices_18
+  - first:
+      213: 504707904689619775
+    second: Stars_Dices_19
+  - first:
+      213: -4821477006767467474
+    second: Stars_Dices_20
+  - first:
+      213: 8424510900020843111
+    second: Stars_Dices_21
+  - first:
+      213: 3184456812428130949
+    second: Stars_Dices_22
+  - first:
+      213: -7459733094513071423
+    second: Stars_Dices_23
+  - first:
+      213: 1682703509506711069
+    second: Stars_Dices_24
+  - first:
+      213: -5703515656656796906
+    second: Stars_Dices_25
+  - first:
+      213: -1039215333647582613
+    second: Stars_Dices_26
+  - first:
+      213: -4401224256851324582
+    second: Stars_Dices_27
+  - first:
+      213: 251057508465082021
+    second: Stars_Dices_28
+  - first:
+      213: 6211868835064932688
+    second: Stars_Dices_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stars_Dices_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 218
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c5db3f3b0e31a00800000000000000
+      internalID: -4717044124256639101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 218
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b8104a7a8ced580800000000000000
+      internalID: -8389145871536666502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 218
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdad1fae4575c090800000000000000
+      internalID: -1809471283460636146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_3
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 218
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2761436e61df3260800000000000000
+      internalID: -5807234676372462821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_4
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 218
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84a12a460567c860800000000000000
+      internalID: 8603160505159105860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_5
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 218
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7e879e8e9541dd0800000000000000
+      internalID: -2410227964838502042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_6
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 218
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b46f0ba9729a560800000000000000
+      internalID: -9155097260658884526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_7
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 218
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7db56b968f6650c0800000000000000
+      internalID: -8948958877026439630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_8
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 218
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1f9008165950880800000000000000
+      internalID: 1903017541352537016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_9
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 214
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b09ce9bc0a3ca30800000000000000
+      internalID: 4084642202252821894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_10
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 112
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcae9a11a3f031450800000000000000
+      internalID: 8243701044785755756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_11
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 112
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78766a655cb40a5d0800000000000000
+      internalID: -2565760496782051132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 113
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6dedbec4d851640800000000000000
+      internalID: -5684977882527712046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_13
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 112
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064039ada1ab048f0800000000000000
+      internalID: 8569289211996861689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_14
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 112
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462abc1ae5a1573e0800000000000000
+      internalID: 870980140916069352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_15
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 112
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090f9bb5d72b1ad80800000000000000
+      internalID: 193176432600771685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 112
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285e6599bcc8cc7e0800000000000000
+      internalID: -6630902289877134813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_17
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 112
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039b61019a38430b0800000000000000
+      internalID: 1975287422742222840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_18
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 112
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b367de92f00787400800000000000000
+      internalID: 4489440098211304003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_19
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 108
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f334b5e4a25110700800000000000000
+      internalID: 8179397901546464783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_20
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 16
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2459e6253ca61db0800000000000000
+      internalID: -2658167182444643549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_21
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 16
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76216225700e9e470800000000000000
+      internalID: 8241176003736601001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_22
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 16
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58af9535996713c20800000000000000
+      internalID: -3219747625638491332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_23
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 16
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1caa25e1644b97890800000000000000
+      internalID: 3031486943935263423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_24
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 16
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e53723de92a5710800000000000000
+      internalID: 7736851534968192282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_25
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 16
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613c7129aba09d0b0800000000000000
+      internalID: 4171946852710503459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_26
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 16
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6afbc8f827f391f0800000000000000
+      internalID: 3188618524207815835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_27
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 16
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a515b896bd5bbe2c0800000000000000
+      internalID: 3814423058019495122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_28
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 16
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae714a497feb7300800000000000000
+      internalID: -4329026052015745443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Dices_29
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 13
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0596d592bcdf43650800000000000000
+      internalID: -7489495744632980981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Stars_Dices_7: -8948958877026439630
+      Stars_Dices_17: 1975287422742222840
+      Stars_Dices_15: 193176432600771685
+      Stars_Dices_26: 3188618524207815835
+      Stars_Dices_9: 4084642202252821894
+      Stars_Dices_1: -8389145871536666502
+      Stars_Dices_5: -2410227964838502042
+      Stars_Dices_19: 8179397901546464783
+      Stars_Dices_24: 7736851534968192282
+      Stars_Dices_25: 4171946852710503459
+      Stars_Dices_0: -4717044124256639101
+      Stars_Dices_13: 8569289211996861689
+      Stars_Dices_28: -4329026052015745443
+      Stars_Dices_21: 8241176003736601001
+      Stars_Dices_18: 4489440098211304003
+      Stars_Dices_16: -6630902289877134813
+      Stars_Dices_14: 870980140916069352
+      Stars_Dices_27: 3814423058019495122
+      Stars_Dices_29: -7489495744632980981
+      Stars_Dices_10: 8243701044785755756
+      Stars_Dices_2: -1809471283460636146
+      Stars_Dices_4: 8603160505159105860
+      Stars_Dices_6: -9155097260658884526
+      Stars_Dices_3: -5807234676372462821
+      Stars_Dices_20: -2658167182444643549
+      Stars_Dices_11: -2565760496782051132
+      Stars_Dices_8: 1903017541352537016
+      Stars_Dices_22: -3219747625638491332
+      Stars_Dices_12: -5684977882527712046
+      Stars_Dices_23: 3031486943935263423
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

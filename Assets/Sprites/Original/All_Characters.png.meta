@@ -1,0 +1,362 @@
+fileFormatVersion: 2
+guid: 733bb7e0b0318de408fe9b12d0dc311a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2654121757857352887
+    second: all characters_0
+  - first:
+      213: -4538944654353159300
+    second: all characters_1
+  - first:
+      213: -7908220544734155062
+    second: all characters_2
+  - first:
+      213: -4968682005410977934
+    second: all characters_3
+  - first:
+      213: -1579488204427615245
+    second: all characters_4
+  - first:
+      213: 5880841771459111810
+    second: all characters_5
+  - first:
+      213: -8446430317080351148
+    second: all characters_6
+  - first:
+      213: -8071676457363169173
+    second: all characters_7
+  - first:
+      213: -496226343861538966
+    second: all characters_8
+  - first:
+      213: -6854060697445065298
+    second: all characters_9
+  - first:
+      213: 2330872310830518110
+    second: all characters_10
+  - first:
+      213: -4869698275232710926
+    second: all characters_11
+  - first:
+      213: 2224847855730531270
+    second: all characters_12
+  - first:
+      213: 7379018604932263258
+    second: all characters_13
+  - first:
+      213: -8669775893120473999
+    second: all characters_14
+  - first:
+      213: -4753611965775820660
+    second: all characters_15
+  - first:
+      213: 4749302367633434302
+    second: all characters_16
+  - first:
+      213: 988215749262659884
+    second: all characters_17
+  - first:
+      213: 2788021409746740521
+    second: all characters_18
+  - first:
+      213: 4437567290552693096
+    second: all characters_19
+  - first:
+      213: 8057387221930725997
+    second: all characters_20
+  - first:
+      213: 8074691090146358931
+    second: all characters_21
+  - first:
+      213: -7027381984282281125
+    second: all characters_22
+  - first:
+      213: 4823211730196351456
+    second: all characters_23
+  - first:
+      213: -8684787220440900610
+    second: all characters_24
+  - first:
+      213: -4101711597985639668
+    second: all characters_25
+  - first:
+      213: -5037728900942753212
+    second: all characters_26
+  - first:
+      213: 7601469514180658909
+    second: all characters_27
+  - first:
+      213: 6042712835617689435
+    second: all characters_28
+  - first:
+      213: 1180693043525157392
+    second: all characters_29
+  - first:
+      213: 8262022591577470242
+    second: all characters_30
+  - first:
+      213: -874259697413691406
+    second: all characters_31
+  - first:
+      213: 6632810276940524175
+    second: all characters_32
+  - first:
+      213: -7466446235749078521
+    second: all characters_33
+  - first:
+      213: 3935925610097876234
+    second: all characters_34
+  - first:
+      213: 3398804358540245405
+    second: all characters_35
+  - first:
+      213: -1589460811568644800
+    second: all characters_36
+  - first:
+      213: -9197267328058041461
+    second: all characters_37
+  - first:
+      213: -5319121210732295824
+    second: all characters_38
+  - first:
+      213: -471900852490475346
+    second: all characters_39
+  - first:
+      213: -5969341670649962792
+    second: all characters_40
+  - first:
+      213: 5497275388995091908
+    second: all characters_41
+  - first:
+      213: -2342369335964857940
+    second: all characters_42
+  - first:
+      213: 7413877101094999123
+    second: all characters_43
+  - first:
+      213: 2098205708017178210
+    second: all characters_44
+  - first:
+      213: 3771174270883283780
+    second: all characters_45
+  - first:
+      213: 1218307039517475452
+    second: all characters_46
+  - first:
+      213: -9007668243669481593
+    second: all characters_47
+  - first:
+      213: -2875932544501751261
+    second: all characters_48
+  - first:
+      213: -3457789364595706108
+    second: all characters_49
+  - first:
+      213: -3669536908851711763
+    second: all characters_50
+  - first:
+      213: 1673450676078658261
+    second: all characters_51
+  - first:
+      213: -6297775275259085135
+    second: all characters_52
+  - first:
+      213: 2833357227401495050
+    second: all characters_53
+  - first:
+      213: -7500296374388756507
+    second: all characters_54
+  - first:
+      213: 1687989293045297638
+    second: all characters_55
+  - first:
+      213: -3616486671259291920
+    second: all characters_56
+  - first:
+      213: -3594240203489397137
+    second: all characters_57
+  - first:
+      213: -8456001395205669955
+    second: all characters_58
+  - first:
+      213: -1321077408694144535
+    second: all characters_59
+  - first:
+      213: 3044923311538552787
+    second: all characters_60
+  - first:
+      213: -5240580861921424361
+    second: all characters_61
+  - first:
+      213: -5791815269872323573
+    second: all characters_62
+  - first:
+      213: 8797678366968043943
+    second: all characters_63
+  - first:
+      213: -8199637627543150509
+    second: all characters_64
+  - first:
+      213: -3747972821332690863
+    second: all characters_65
+  - first:
+      213: -5126054161284542772
+    second: all characters_66
+  - first:
+      213: 4397718778577579570
+    second: all characters_67
+  - first:
+      213: 2115144444951806033
+    second: all characters_68
+  - first:
+      213: 5227245603456778853
+    second: all characters_69
+  - first:
+      213: -7611408046988725206
+    second: all characters_70
+  - first:
+      213: 8856214464901200604
+    second: all characters_71
+  - first:
+      213: -7384934113638357982
+    second: all characters_72
+  - first:
+      213: 9164957647230216995
+    second: all characters_73
+  - first:
+      213: 21295337478149601
+    second: all characters_74
+  - first:
+      213: 3702321652117060716
+    second: all characters_75
+  - first:
+      213: 1124113592090142878
+    second: all characters_76
+  - first:
+      213: 5286003351089098952
+    second: all characters_77
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: d102ea6ca9d88a74dadacb6a80f6d148
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3567490274835035839
+    second: grass background edited-01 (1)_0
+  - first:
+      213: 3025882602733972612
+    second: grass background edited-01 (1)_1
+  - first:
+      213: -9018525998463736910
+    second: grass background edited-01 (1)_2
+  - first:
+      213: -4176487016950908949
+    second: grass background edited-01 (1)_3
+  - first:
+      213: -5952490359008590604
+    second: grass background edited-01 (1)_4
+  - first:
+      213: 7642898147000380771
+    second: grass background edited-01 (1)_5
+  - first:
+      213: -1584420647192132737
+    second: grass background edited-01 (1)_6
+  - first:
+      213: 5926777561557315784
+    second: grass background edited-01 (1)_7
+  - first:
+      213: -6020560383282832344
+    second: grass background edited-01 (1)_8
+  - first:
+      213: 7342045052486443283
+    second: grass background edited-01 (1)_9
+  - first:
+      213: -9060479293050232835
+    second: grass background edited-01 (1)_10
+  - first:
+      213: 3779958936357918594
+    second: grass background edited-01 (1)_11
+  - first:
+      213: 6647631925284289609
+    second: grass background edited-01 (1)_12
+  - first:
+      213: -5907635268836358151
+    second: grass background edited-01 (1)_13
+  - first:
+      213: -5734852765942184867
+    second: grass background edited-01 (1)_14
+  - first:
+      213: 9151319357341570981
+    second: grass background edited-01 (1)_15
+  - first:
+      213: -4697941114447500064
+    second: grass background edited-01 (1)_16
+  - first:
+      213: 709716007859946092
+    second: grass background edited-01 (1)_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1576
+        width: 467
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6f33be085428130800000000000000
+      internalID: 3567490274835035839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1769
+        width: 97
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c2ef302381ef920800000000000000
+      internalID: 3025882602733972612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1799
+        width: 61
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3a1f7f262c7d280800000000000000
+      internalID: -9018525998463736910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1787
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be73c91af232a06c0800000000000000
+      internalID: -4176487016950908949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 1797
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f40b5e5e81846da0800000000000000
+      internalID: -5952490359008590604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1796
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36de272fe57011a60800000000000000
+      internalID: 7642898147000380771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1791
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f738155e0d1030ae0800000000000000
+      internalID: -1584420647192132737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 1786
+        width: 90
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c031637ac4204250800000000000000
+      internalID: 5926777561557315784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1800
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c13adca3ca27ca0800000000000000
+      internalID: -6020560383282832344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1789
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3116e5e431f24e560800000000000000
+      internalID: 7342045052486443283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1593
+        width: 141
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff55f26616b24280800000000000000
+      internalID: -9060479293050232835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_11
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1625
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2875d2320ac157430800000000000000
+      internalID: 3779958936357918594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_12
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1589
+        width: 103
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94cbd10f302214c50800000000000000
+      internalID: 6647631925284289609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_13
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1483
+        width: 425
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f78072e50dd30ea0800000000000000
+      internalID: -5907635268836358151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_14
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1038
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5489de3bc5b960b0800000000000000
+      internalID: -5734852765942184867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_15
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1037
+        width: 258
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a710804874000f70800000000000000
+      internalID: 9151319357341570981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_16
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 782
+        width: 83
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec67a9727f8dceb0800000000000000
+      internalID: -4697941114447500064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass background edited-01 (1)_17
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 823
+        width: 166
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6286ebe2fa69d900800000000000000
+      internalID: 709716007859946092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      grass background edited-01 (1)_7: 5926777561557315784
+      grass background edited-01 (1)_11: 3779958936357918594
+      grass background edited-01 (1)_3: -4176487016950908949
+      grass background edited-01 (1)_13: -5907635268836358151
+      grass background edited-01 (1)_6: -1584420647192132737
+      grass background edited-01 (1)_8: -6020560383282832344
+      grass background edited-01 (1)_12: 6647631925284289609
+      grass background edited-01 (1)_14: -5734852765942184867
+      grass background edited-01 (1)_16: -4697941114447500064
+      grass background edited-01 (1)_15: 9151319357341570981
+      grass background edited-01 (1)_0: 3567490274835035839
+      grass background edited-01 (1)_5: 7642898147000380771
+      grass background edited-01 (1)_4: -5952490359008590604
+      grass background edited-01 (1)_9: 7342045052486443283
+      grass background edited-01 (1)_17: 709716007859946092
+      grass background edited-01 (1)_1: 3025882602733972612
+      grass background edited-01 (1)_2: -9018525998463736910
+      grass background edited-01 (1)_10: -9060479293050232835
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,974 @@
+fileFormatVersion: 2
+guid: 692b2ee9208aa16499ca7b70996b6f3c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6153937072450928708
+    second: All_Dots_Dices_0
+  - first:
+      213: 5477506739873963351
+    second: All_Dots_Dices_1
+  - first:
+      213: -5698957275858126763
+    second: All_Dots_Dices_2
+  - first:
+      213: 3281723789291746799
+    second: All_Dots_Dices_3
+  - first:
+      213: -5694175517122016678
+    second: All_Dots_Dices_4
+  - first:
+      213: 4962347016359324856
+    second: All_Dots_Dices_5
+  - first:
+      213: -1552065297495109176
+    second: All_Dots_Dices_6
+  - first:
+      213: 3870366483451919118
+    second: All_Dots_Dices_7
+  - first:
+      213: 373546436833187939
+    second: All_Dots_Dices_8
+  - first:
+      213: -4823984163015141164
+    second: All_Dots_Dices_9
+  - first:
+      213: 275464303029780860
+    second: All_Dots_Dices_10
+  - first:
+      213: 5980617691254163664
+    second: All_Dots_Dices_11
+  - first:
+      213: 6425998506257582150
+    second: All_Dots_Dices_12
+  - first:
+      213: -4978022554123015658
+    second: All_Dots_Dices_13
+  - first:
+      213: -901141139023746785
+    second: All_Dots_Dices_14
+  - first:
+      213: -3615443958993788772
+    second: All_Dots_Dices_15
+  - first:
+      213: 5069510303713121127
+    second: All_Dots_Dices_16
+  - first:
+      213: 5456992385452090737
+    second: All_Dots_Dices_17
+  - first:
+      213: 5041455610291318440
+    second: All_Dots_Dices_18
+  - first:
+      213: 3836311578144173528
+    second: All_Dots_Dices_19
+  - first:
+      213: -3726758776784059090
+    second: All_Dots_Dices_20
+  - first:
+      213: -6040847209893974302
+    second: All_Dots_Dices_21
+  - first:
+      213: 4784353229768960435
+    second: All_Dots_Dices_22
+  - first:
+      213: 7646725278367957843
+    second: All_Dots_Dices_23
+  - first:
+      213: 3456677899512052639
+    second: All_Dots_Dices_24
+  - first:
+      213: -6300865309658726408
+    second: All_Dots_Dices_25
+  - first:
+      213: 9126543906041380730
+    second: All_Dots_Dices_26
+  - first:
+      213: 3923833385417022977
+    second: All_Dots_Dices_27
+  - first:
+      213: 5069750449891431217
+    second: All_Dots_Dices_28
+  - first:
+      213: -7997907333133398748
+    second: All_Dots_Dices_29
+  - first:
+      213: 4784223808387552760
+    second: Dots_Dices_0
+  - first:
+      213: 4613080100609667437
+    second: Dots_Dices_1
+  - first:
+      213: -5357295403809912481
+    second: Dots_Dices_2
+  - first:
+      213: -5035609947438147287
+    second: Dots_Dices_3
+  - first:
+      213: -3362384764009065930
+    second: Dots_Dices_4
+  - first:
+      213: -3981843313972354610
+    second: Dots_Dices_5
+  - first:
+      213: -7649744436128042387
+    second: Dots_Dices_6
+  - first:
+      213: -1984485171352804000
+    second: Dots_Dices_7
+  - first:
+      213: -3807715152354825393
+    second: Dots_Dices_8
+  - first:
+      213: 5790627345645695238
+    second: Dots_Dices_9
+  - first:
+      213: -5631994330203055015
+    second: Dots_Dices_10
+  - first:
+      213: -645768645790205550
+    second: Dots_Dices_11
+  - first:
+      213: -2966145273556082810
+    second: Dots_Dices_12
+  - first:
+      213: 3037242040599794701
+    second: Dots_Dices_13
+  - first:
+      213: 2904422178834315314
+    second: Dots_Dices_14
+  - first:
+      213: 3075660584580658785
+    second: Dots_Dices_15
+  - first:
+      213: -719904312544094612
+    second: Dots_Dices_16
+  - first:
+      213: 3774375481907960345
+    second: Dots_Dices_17
+  - first:
+      213: 7356475066264266248
+    second: Dots_Dices_18
+  - first:
+      213: 2591584986664385851
+    second: Dots_Dices_19
+  - first:
+      213: 6745766784176037944
+    second: Dots_Dices_20
+  - first:
+      213: -634132969943790994
+    second: Dots_Dices_21
+  - first:
+      213: 2293228290731087384
+    second: Dots_Dices_22
+  - first:
+      213: 4060155119932998536
+    second: Dots_Dices_23
+  - first:
+      213: 1191649071478104014
+    second: Dots_Dices_24
+  - first:
+      213: 2547550326648781037
+    second: Dots_Dices_25
+  - first:
+      213: -8327379038740144986
+    second: Dots_Dices_26
+  - first:
+      213: 5268468663123413051
+    second: Dots_Dices_27
+  - first:
+      213: 6587907680576808594
+    second: Dots_Dices_28
+  - first:
+      213: 2920491639343231444
+    second: Dots_Dices_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dots_Dices_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 104
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f518e0b43af46240800000000000000
+      internalID: 4784223808387552760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 102
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61334d09e3f40040800000000000000
+      internalID: 4613080100609667437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 102
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59c313e63017a5b0800000000000000
+      internalID: -5357295403809912481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 102
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929968fbe6bed1ab0800000000000000
+      internalID: -5035609947438147287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_4
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 102
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632dd0f2fd86651d0800000000000000
+      internalID: -3362384764009065930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_5
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 102
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1e9674a96adb8c0800000000000000
+      internalID: -3981843313972354610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_6
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 100
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62311627f5a6d590800000000000000
+      internalID: -7649744436128042387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_7
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 99
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0656c7b3041b574e0800000000000000
+      internalID: -1984485171352804000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_8
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 102
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ba40a3e37482bc0800000000000000
+      internalID: -3807715152354825393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_9
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 102
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601ffdb04e07c5050800000000000000
+      internalID: 5790627345645695238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 63
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c9b3b0ff227d1b0800000000000000
+      internalID: -5631994330203055015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 61
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299f69c86d4c907f0800000000000000
+      internalID: -645768645790205550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_12
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 61
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f5c79c69226d6d0800000000000000
+      internalID: -2966145273556082810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_13
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 61
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0455de3b83762a20800000000000000
+      internalID: 3037242040599794701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_14
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 61
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2387f2755949e4820800000000000000
+      internalID: 2904422178834315314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_15
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 58
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166b9919101feaa20800000000000000
+      internalID: 3075660584580658785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_16
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 61
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66998a87d26206f0800000000000000
+      internalID: -719904312544094612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_17
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 61
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a5118d086416430800000000000000
+      internalID: 3774375481907960345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_18
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 58
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80623b3b813771660800000000000000
+      internalID: 7356475066264266248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_19
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 61
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3dbd5780d827f320800000000000000
+      internalID: 2591584986664385851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_20
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 25
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830217c4627cd9d50800000000000000
+      internalID: 6745766784176037944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_21
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 23
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a03227c6b1337f0800000000000000
+      internalID: -634132969943790994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_22
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 23
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81617e9fafe23df10800000000000000
+      internalID: 2293228290731087384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_23
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 23
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8830798e191985830800000000000000
+      internalID: 4060155119932998536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_24
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 23
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf50625486998010800000000000000
+      internalID: 1191649071478104014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_25
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 23
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8b45b4687ba5320800000000000000
+      internalID: 2547550326648781037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_26
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 23
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac1cd572e43f6c80800000000000000
+      internalID: -8327379038740144986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_27
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 23
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b388fb7e55c5d1940800000000000000
+      internalID: 5268468663123413051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_28
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 22
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29629d99123fc6b50800000000000000
+      internalID: 6587907680576808594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dots_Dices_29
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 23
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d13d8c2caba78820800000000000000
+      internalID: 2920491639343231444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dots_Dices_23: 4060155119932998536
+      Dots_Dices_29: 2920491639343231444
+      Dots_Dices_19: 2591584986664385851
+      Dots_Dices_1: 4613080100609667437
+      Dots_Dices_13: 3037242040599794701
+      Dots_Dices_26: -8327379038740144986
+      Dots_Dices_9: 5790627345645695238
+      Dots_Dices_17: 3774375481907960345
+      Dots_Dices_27: 5268468663123413051
+      Dots_Dices_20: 6745766784176037944
+      Dots_Dices_16: -719904312544094612
+      Dots_Dices_3: -5035609947438147287
+      Dots_Dices_4: -3362384764009065930
+      Dots_Dices_0: 4784223808387552760
+      Dots_Dices_18: 7356475066264266248
+      Dots_Dices_12: -2966145273556082810
+      Dots_Dices_21: -634132969943790994
+      Dots_Dices_5: -3981843313972354610
+      Dots_Dices_6: -7649744436128042387
+      Dots_Dices_14: 2904422178834315314
+      Dots_Dices_28: 6587907680576808594
+      Dots_Dices_25: 2547550326648781037
+      Dots_Dices_7: -1984485171352804000
+      Dots_Dices_10: -5631994330203055015
+      Dots_Dices_2: -5357295403809912481
+      Dots_Dices_15: 3075660584580658785
+      Dots_Dices_8: -3807715152354825393
+      Dots_Dices_11: -645768645790205550
+      Dots_Dices_24: 1191649071478104014
+      Dots_Dices_22: 2293228290731087384
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

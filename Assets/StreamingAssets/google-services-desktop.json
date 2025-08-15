@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "386784235697",
+    "project_id": "random-dice-android-ios",
+    "storage_bucket": "random-dice-android-ios.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386784235697:android:1db8911cf5a7eda1d59290",
+        "android_client_info": {
+          "package_name": "com.DreamWay.RandomDice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXRiTF8XiTkrMl9nNHALfdaAud3faVnH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

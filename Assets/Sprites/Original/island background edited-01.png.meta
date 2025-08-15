@@ -1,0 +1,4834 @@
+fileFormatVersion: 2
+guid: 86478ba17280cdd4fbea7f5a56d5054e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7969737118563086815
+    second: island background edited-01_0
+  - first:
+      213: -6252709771336313214
+    second: island background edited-01_1
+  - first:
+      213: -4678189779132706402
+    second: island background edited-01_2
+  - first:
+      213: 519135739575518913
+    second: island background edited-01_3
+  - first:
+      213: -59431583669668938
+    second: island background edited-01_4
+  - first:
+      213: -2867124582463223376
+    second: island background edited-01_5
+  - first:
+      213: 8204797723904971395
+    second: island background edited-01_6
+  - first:
+      213: 1108609157560117316
+    second: island background edited-01_7
+  - first:
+      213: 453442992923532984
+    second: island background edited-01_8
+  - first:
+      213: 39211747929197336
+    second: island background edited-01_9
+  - first:
+      213: -7140645462544955360
+    second: island background edited-01_10
+  - first:
+      213: -5237717655081704412
+    second: island background edited-01_11
+  - first:
+      213: -1279425831813368707
+    second: island background edited-01_12
+  - first:
+      213: 3634177607421918086
+    second: island background edited-01_13
+  - first:
+      213: 8308297844508226376
+    second: island background edited-01_14
+  - first:
+      213: 8920631763945887776
+    second: island background edited-01_15
+  - first:
+      213: 563699514877204200
+    second: island background edited-01_16
+  - first:
+      213: -4697491408882546816
+    second: island background edited-01_17
+  - first:
+      213: 5312073895073006955
+    second: island background edited-01_18
+  - first:
+      213: 6401259383658855707
+    second: island background edited-01_19
+  - first:
+      213: -4960113089026594015
+    second: island background edited-01_20
+  - first:
+      213: 8841687456188717418
+    second: island background edited-01_21
+  - first:
+      213: 8598172302616866786
+    second: island background edited-01_22
+  - first:
+      213: -2659807665821625756
+    second: island background edited-01_23
+  - first:
+      213: 6368444847026240519
+    second: island background edited-01_24
+  - first:
+      213: -7448088779090989133
+    second: island background edited-01_25
+  - first:
+      213: -3015367180766241673
+    second: island background edited-01_26
+  - first:
+      213: 7898861409018577307
+    second: island background edited-01_27
+  - first:
+      213: 1499612138921015720
+    second: island background edited-01_28
+  - first:
+      213: 5692202168431989818
+    second: island background edited-01_29
+  - first:
+      213: 5352040304470452894
+    second: island background edited-01_30
+  - first:
+      213: 33282493025204993
+    second: island background edited-01_31
+  - first:
+      213: 5601465281565333715
+    second: island background edited-01_32
+  - first:
+      213: 4598999294507190069
+    second: island background edited-01_33
+  - first:
+      213: -9039934938814295411
+    second: island background edited-01_34
+  - first:
+      213: -5033559150346752614
+    second: island background edited-01_35
+  - first:
+      213: -8958448872949202282
+    second: island background edited-01_36
+  - first:
+      213: 6603228914712586663
+    second: island background edited-01_37
+  - first:
+      213: -145909439492080470
+    second: island background edited-01_38
+  - first:
+      213: 1014127279636795584
+    second: island background edited-01_39
+  - first:
+      213: -2241836596912607218
+    second: island background edited-01_40
+  - first:
+      213: 4809389308114237852
+    second: island background edited-01_41
+  - first:
+      213: 366432883395644146
+    second: island background edited-01_42
+  - first:
+      213: 2465681776453710979
+    second: island background edited-01_43
+  - first:
+      213: -888584512543604934
+    second: island background edited-01_44
+  - first:
+      213: 5951989231745118868
+    second: island background edited-01_45
+  - first:
+      213: 8990167475381356994
+    second: island background edited-01_46
+  - first:
+      213: -8078334954728317954
+    second: island background edited-01_47
+  - first:
+      213: 2678848776389996839
+    second: island background edited-01_48
+  - first:
+      213: -7632381553878651982
+    second: island background edited-01_49
+  - first:
+      213: 4383833641371433129
+    second: island background edited-01_50
+  - first:
+      213: -8472948690113177212
+    second: island background edited-01_51
+  - first:
+      213: -3979170987710477913
+    second: island background edited-01_52
+  - first:
+      213: 2882831140290285627
+    second: island background edited-01_53
+  - first:
+      213: 1064892396816920697
+    second: island background edited-01_54
+  - first:
+      213: 7699216493191388191
+    second: island background edited-01_55
+  - first:
+      213: -4975221836162878712
+    second: island background edited-01_56
+  - first:
+      213: 6282414820202760306
+    second: island background edited-01_57
+  - first:
+      213: -195319265756638459
+    second: island background edited-01_58
+  - first:
+      213: -360317458343323469
+    second: island background edited-01_59
+  - first:
+      213: -8543502608353534279
+    second: island background edited-01_60
+  - first:
+      213: -1430592102771987341
+    second: island background edited-01_61
+  - first:
+      213: -2582264997645544127
+    second: island background edited-01_62
+  - first:
+      213: -8485688560903594135
+    second: island background edited-01_63
+  - first:
+      213: -8126056699823321034
+    second: island background edited-01_64
+  - first:
+      213: -2222027228289845757
+    second: island background edited-01_65
+  - first:
+      213: 16296656224085963
+    second: island background edited-01_66
+  - first:
+      213: -2973838606451455082
+    second: island background edited-01_67
+  - first:
+      213: 5119481994083493672
+    second: island background edited-01_68
+  - first:
+      213: 6102083838363994725
+    second: island background edited-01_69
+  - first:
+      213: 3245810601959041228
+    second: island background edited-01_70
+  - first:
+      213: -828878122664895693
+    second: island background edited-01_71
+  - first:
+      213: 1394084952803362423
+    second: island background edited-01_72
+  - first:
+      213: 6709262500714743807
+    second: island background edited-01_73
+  - first:
+      213: 6722204793044462659
+    second: island background edited-01_74
+  - first:
+      213: -3991630344904863976
+    second: island background edited-01_75
+  - first:
+      213: -4816847335817135712
+    second: island background edited-01_76
+  - first:
+      213: -2135118924605834959
+    second: island background edited-01_77
+  - first:
+      213: -2963884330700148205
+    second: island background edited-01_78
+  - first:
+      213: 8971792845684814182
+    second: island background edited-01_79
+  - first:
+      213: -4972844429234088488
+    second: island background edited-01_80
+  - first:
+      213: -8910322568129814704
+    second: island background edited-01_81
+  - first:
+      213: 7217160976786946427
+    second: island background edited-01_82
+  - first:
+      213: -3627349523880583114
+    second: island background edited-01_83
+  - first:
+      213: 4395078190675183041
+    second: island background edited-01_84
+  - first:
+      213: 8114545447105888797
+    second: island background edited-01_85
+  - first:
+      213: -5905740188705230707
+    second: island background edited-01_86
+  - first:
+      213: 131863512918576819
+    second: island background edited-01_87
+  - first:
+      213: 917999548439622398
+    second: island background edited-01_88
+  - first:
+      213: -2841475376984086760
+    second: island background edited-01_89
+  - first:
+      213: -2699967655069110071
+    second: island background edited-01_90
+  - first:
+      213: 6158388217889656911
+    second: island background edited-01_91
+  - first:
+      213: 2927546088372022801
+    second: island background edited-01_92
+  - first:
+      213: -5410499016089185249
+    second: island background edited-01_93
+  - first:
+      213: 5700644936407167073
+    second: island background edited-01_94
+  - first:
+      213: -7489562394359905556
+    second: island background edited-01_95
+  - first:
+      213: 8767286548489389026
+    second: island background edited-01_96
+  - first:
+      213: 2101423126819251599
+    second: island background edited-01_97
+  - first:
+      213: -1097635052822466393
+    second: island background edited-01_98
+  - first:
+      213: -5289299299289008516
+    second: island background edited-01_99
+  - first:
+      213: -5196519305997075604
+    second: island background edited-01_100
+  - first:
+      213: -6622393517867646011
+    second: island background edited-01_101
+  - first:
+      213: -5906969781285404797
+    second: island background edited-01_102
+  - first:
+      213: 542817128528564715
+    second: island background edited-01_103
+  - first:
+      213: 3066031399726815980
+    second: island background edited-01_104
+  - first:
+      213: -6568069298196357835
+    second: island background edited-01_105
+  - first:
+      213: 3496945307716130578
+    second: island background edited-01_106
+  - first:
+      213: -3582762135642372443
+    second: island background edited-01_107
+  - first:
+      213: -2025866881701649236
+    second: island background edited-01_108
+  - first:
+      213: -1996515299837757242
+    second: island background edited-01_109
+  - first:
+      213: 2300701449633684249
+    second: island background edited-01_110
+  - first:
+      213: -3399762201016607810
+    second: island background edited-01_111
+  - first:
+      213: -2267766945936691898
+    second: island background edited-01_112
+  - first:
+      213: -4292532484190413537
+    second: island background edited-01_113
+  - first:
+      213: 8013284764188723461
+    second: island background edited-01_114
+  - first:
+      213: 3419129201875356483
+    second: island background edited-01_115
+  - first:
+      213: -3363013516024065257
+    second: island background edited-01_116
+  - first:
+      213: -1081237344919416655
+    second: island background edited-01_117
+  - first:
+      213: 6678794237786994949
+    second: island background edited-01_118
+  - first:
+      213: 3540608979150662551
+    second: island background edited-01_119
+  - first:
+      213: 1524102780226538130
+    second: island background edited-01_120
+  - first:
+      213: -4493735278192497019
+    second: island background edited-01_121
+  - first:
+      213: 8349346225528969175
+    second: island background edited-01_122
+  - first:
+      213: -7142734164524138813
+    second: island background edited-01_123
+  - first:
+      213: 36676814761673833
+    second: island background edited-01_124
+  - first:
+      213: -6790452234238802162
+    second: island background edited-01_125
+  - first:
+      213: 8561383502019544981
+    second: island background edited-01_126
+  - first:
+      213: 2822680161403620131
+    second: island background edited-01_127
+  - first:
+      213: -5599014123727066893
+    second: island background edited-01_128
+  - first:
+      213: 4893746466317068403
+    second: island background edited-01_129
+  - first:
+      213: 2766357658305542868
+    second: island background edited-01_130
+  - first:
+      213: -3224176405220817001
+    second: island background edited-01_131
+  - first:
+      213: -8613947927261784199
+    second: island background edited-01_132
+  - first:
+      213: -8853295613018012879
+    second: island background edited-01_133
+  - first:
+      213: 6501306436058590932
+    second: island background edited-01_134
+  - first:
+      213: -6613150985470364519
+    second: island background edited-01_135
+  - first:
+      213: 5136564533606960513
+    second: island background edited-01_136
+  - first:
+      213: -9178082572082399617
+    second: island background edited-01_137
+  - first:
+      213: -3220983696918645852
+    second: island background edited-01_138
+  - first:
+      213: -7795309054881825832
+    second: island background edited-01_139
+  - first:
+      213: 6812336254495887597
+    second: island background edited-01_140
+  - first:
+      213: -3915459188816317148
+    second: island background edited-01_141
+  - first:
+      213: -845645703844270447
+    second: island background edited-01_142
+  - first:
+      213: 2412064184225170727
+    second: island background edited-01_143
+  - first:
+      213: 5352839418765270901
+    second: island background edited-01_144
+  - first:
+      213: 1688051940823180801
+    second: island background edited-01_145
+  - first:
+      213: -865260618794823039
+    second: island background edited-01_146
+  - first:
+      213: -6512099554767530389
+    second: island background edited-01_147
+  - first:
+      213: 5337698983511188515
+    second: island background edited-01_148
+  - first:
+      213: -8710608923790715146
+    second: island background edited-01_149
+  - first:
+      213: 3762233520378723106
+    second: island background edited-01_150
+  - first:
+      213: 7902150444258614241
+    second: island background edited-01_151
+  - first:
+      213: -838127064030071485
+    second: island background edited-01_152
+  - first:
+      213: -6532108231838391122
+    second: island background edited-01_153
+  - first:
+      213: 1691026213583769600
+    second: island background edited-01_154
+  - first:
+      213: -2956544904260702216
+    second: island background edited-01_155
+  - first:
+      213: 4700359313341173537
+    second: island background edited-01_156
+  - first:
+      213: 2880720461270791187
+    second: island background edited-01_157
+  - first:
+      213: 3441326573239280036
+    second: island background edited-01_158
+  - first:
+      213: -1371790525825508602
+    second: island background edited-01_159
+  - first:
+      213: -8890461616618294842
+    second: island background edited-01_160
+  - first:
+      213: 4891914656386155026
+    second: island background edited-01_161
+  - first:
+      213: -76798510086553933
+    second: island background edited-01_162
+  - first:
+      213: -502266011555337306
+    second: island background edited-01_163
+  - first:
+      213: 7643405358736279308
+    second: island background edited-01_164
+  - first:
+      213: 85317449696741101
+    second: island background edited-01_165
+  - first:
+      213: -2770066411517893910
+    second: island background edited-01_166
+  - first:
+      213: 3323452809628595524
+    second: island background edited-01_167
+  - first:
+      213: 3583862163078116402
+    second: island background edited-01_168
+  - first:
+      213: 7885586284933441472
+    second: island background edited-01_169
+  - first:
+      213: -8967687321888315214
+    second: island background edited-01_170
+  - first:
+      213: 6748709968856221435
+    second: island background edited-01_171
+  - first:
+      213: 4763675954395047457
+    second: island background edited-01_172
+  - first:
+      213: -5057496810244894329
+    second: island background edited-01_173
+  - first:
+      213: -4966364619306575083
+    second: island background edited-01_174
+  - first:
+      213: -2505220244805028531
+    second: island background edited-01_175
+  - first:
+      213: -5839662409578910512
+    second: island background edited-01_176
+  - first:
+      213: 7047338701055862225
+    second: island background edited-01_177
+  - first:
+      213: 4882027116528487491
+    second: island background edited-01_178
+  - first:
+      213: -1907636712962620701
+    second: island background edited-01_179
+  - first:
+      213: -8804369749668422999
+    second: island background edited-01_180
+  - first:
+      213: -163762676471487956
+    second: island background edited-01_181
+  - first:
+      213: -8466604122588552069
+    second: island background edited-01_182
+  - first:
+      213: 4438304386353010151
+    second: island background edited-01_183
+  - first:
+      213: -6991702744963732781
+    second: island background edited-01_184
+  - first:
+      213: 1502235445567108255
+    second: island background edited-01_185
+  - first:
+      213: -3955680492850378766
+    second: island background edited-01_186
+  - first:
+      213: 8861551415536975714
+    second: island background edited-01_187
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: island background edited-01_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1834
+        width: 122
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1b2311fa13a9e60800000000000000
+      internalID: 7969737118563086815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_1
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1725
+        width: 150
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28692eb5799e939a0800000000000000
+      internalID: -6252709771336313214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_2
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1780
+        width: 95
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e919ee69e2bb31fb0800000000000000
+      internalID: -4678189779132706402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_3
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1587
+        width: 457
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6cb936437543700800000000000000
+      internalID: 519135739575518913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1746
+        width: 123
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b33eee1a4bdc2ff0800000000000000
+      internalID: -59431583669668938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_5
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1661
+        width: 122
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b94d77026de538d0800000000000000
+      internalID: -2867124582463223376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_6
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1610
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3821a4b1f0c4dd170800000000000000
+      internalID: 8204797723904971395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1571
+        width: 222
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448ad17b722926f00800000000000000
+      internalID: 1108609157560117316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_8
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1572
+        width: 123
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bed817eff3fa4600800000000000000
+      internalID: 453442992923532984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1105
+        width: 564
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b875280ee4b8000800000000000000
+      internalID: 39211747929197336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_10
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1250
+        width: 457
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028c00ad8c457ec90800000000000000
+      internalID: -7140645462544955360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 922
+        width: 442
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42420171b83ef47b0800000000000000
+      internalID: -5237717655081704412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_12
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 767
+        width: 564
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d743e421cf09e3ee0800000000000000
+      internalID: -1279425831813368707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 726
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68bff0d77413f6230800000000000000
+      internalID: 3634177607421918086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 732
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8437e0eced00d4370800000000000000
+      internalID: 8308297844508226376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_15
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 724
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0289f0663537ccb70800000000000000
+      internalID: 8920631763945887776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_16
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 717
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6d050e8b9a2d700800000000000000
+      internalID: 563699514877204200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_17
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 716
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0874b16b3782fceb0800000000000000
+      internalID: -4697491408882546816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_18
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 714
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65c370201748b940800000000000000
+      internalID: 5312073895073006955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_19
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 716
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d3f1e7e77d5d850800000000000000
+      internalID: 6401259383658855707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_20
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 711
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bedc2ec632a2bb0800000000000000
+      internalID: -4960113089026594015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_21
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 703
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69d72965ebf3ba70800000000000000
+      internalID: 8841687456188717418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_22
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 710
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efa4177728d25770800000000000000
+      internalID: 8598172302616866786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_23
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 702
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46257db2507761bd0800000000000000
+      internalID: -2659807665821625756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_24
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 708
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c7aaec8d2416850800000000000000
+      internalID: 6368444847026240519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_25
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 703
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf65b297b213a890800000000000000
+      internalID: -7448088779090989133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_26
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 708
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c9e0376834726d0800000000000000
+      internalID: -3015367180766241673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_27
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 701
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91089ef9946e9d60800000000000000
+      internalID: 7898861409018577307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_28
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 700
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a930498b41bfc410800000000000000
+      internalID: 1499612138921015720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_29
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 696
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34d81fa6b3cefe40800000000000000
+      internalID: 5692202168431989818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_30
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 700
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ae883fc44464a40800000000000000
+      internalID: 5352040304470452894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_31
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 693
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bb106404e367000800000000000000
+      internalID: 33282493025204993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_32
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 688
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d89269eef66cbd40800000000000000
+      internalID: 5601465281565333715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_33
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 687
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5378f57ed7de2df30800000000000000
+      internalID: 4598999294507190069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_34
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 694
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82d45b9113bb8280800000000000000
+      internalID: -9039934938814295411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_35
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 695
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d2aa72f94352ab0800000000000000
+      internalID: -5033559150346752614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_36
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 690
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6924d55c6323da380800000000000000
+      internalID: -8958448872949202282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_37
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 685
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9280866b163ab50800000000000000
+      internalID: 6603228914712586663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_38
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 681
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacb2b94320a9fdf0800000000000000
+      internalID: -145909439492080470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_39
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 674
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0d8c34367e21e00800000000000000
+      internalID: 1014127279636795584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_40
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 678
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00bd8c2e7563e0e0800000000000000
+      internalID: -2241836596912607218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_41
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 671
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99f5b038126eb240800000000000000
+      internalID: 4809389308114237852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_42
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 668
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fac1d814c4d51500800000000000000
+      internalID: 366432883395644146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_43
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 662
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3847dae038cd73220800000000000000
+      internalID: 2465681776453710979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_44
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 657
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fbce0081d1ba3f0800000000000000
+      internalID: -888584512543604934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_45
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 569
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4923e19dba6b99250800000000000000
+      internalID: 5951989231745118868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_46
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 562
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c94069dfad73cc70800000000000000
+      internalID: 8990167475381356994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_47
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 558
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb1cc6d82df3ef80800000000000000
+      internalID: -8078334954728317954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_48
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 552
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72137bbd4ce2d2520800000000000000
+      internalID: 2678848776389996839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_49
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 557
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bba1d23a65541690800000000000000
+      internalID: -7632381553878651982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_50
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 545
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8f954687186dc30800000000000000
+      internalID: 4383833641371433129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_51
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 552
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48951b5de0a0a6a80800000000000000
+      internalID: -8472948690113177212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_52
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 543
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a90af8b11527c8c0800000000000000
+      internalID: -3979170987710477913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_53
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 537
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30df60f5afd10820800000000000000
+      internalID: 2882831140290285627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_54
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 536
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970794c2ef147ce00800000000000000
+      internalID: 1064892396816920697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_55
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 539
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c508dbb9c19da60800000000000000
+      internalID: 7699216493191388191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_56
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 533
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803beb0991674fab0800000000000000
+      internalID: -4975221836162878712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_57
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 536
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278c5d94efe9f2750800000000000000
+      internalID: 6282414820202760306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_58
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 530
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50319c2a9261a4df0800000000000000
+      internalID: -195319265756638459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_59
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 536
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b813114e25effaf0800000000000000
+      internalID: -360317458343323469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_60
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 530
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bed673a4a16f6980800000000000000
+      internalID: -8543502608353534279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_61
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 522
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37cebc7ef04852ce0800000000000000
+      internalID: -1430592102771987341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_62
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 528
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14599638aa3f92cd0800000000000000
+      internalID: -2582264997645544127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_63
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 522
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fdeb48637cc3a80800000000000000
+      internalID: -8485688560903594135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_64
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 528
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63019563c727a3f80800000000000000
+      internalID: -8126056699823321034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_65
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 520
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306b9883206c921e0800000000000000
+      internalID: -2222027228289845757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_66
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 520
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc76345f8b5e93000800000000000000
+      internalID: 16296656224085963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_67
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 516
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b4e132b8dcab6d0800000000000000
+      internalID: -2973838606451455082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_68
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 519
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827ea5bdfbd0c0740800000000000000
+      internalID: 5119481994083493672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_69
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 522
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a8657bbe4fea450800000000000000
+      internalID: 6102083838363994725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_70
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 507
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc827f1ab8f6b0d20800000000000000
+      internalID: 3245810601959041228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_71
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 507
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b57703dbb3f74f0800000000000000
+      internalID: -828878122664895693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_72
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 513
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776cf8ed0e8c85310800000000000000
+      internalID: 1394084952803362423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_73
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 515
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff783fb72b61c1d50800000000000000
+      internalID: 6709262500714743807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_74
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 505
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ce7dcb4a11a4d50800000000000000
+      internalID: 6722204793044462659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_75
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 500
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f86419951ea98c0800000000000000
+      internalID: -3991630344904863976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_76
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 497
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9355b6ede172db0800000000000000
+      internalID: -4816847335817135712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_77
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 465
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139b7a186a88e52e0800000000000000
+      internalID: -2135118924605834959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_78
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 472
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312754197ea2ed6d0800000000000000
+      internalID: -2963884330700148205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_79
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 463
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6613f6dfe06328c70800000000000000
+      internalID: 8971792845684814182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_80
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 455
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5d830c658ecfab0800000000000000
+      internalID: -4972844429234088488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_81
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 454
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fd97c45dc285480800000000000000
+      internalID: -8910322568129814704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_82
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 451
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7972349ba1882460800000000000000
+      internalID: 7217160976786946427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_83
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 454
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6306ae893d019adc0800000000000000
+      internalID: -3627349523880583114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_84
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 447
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5c24b04547efc30800000000000000
+      internalID: 4395078190675183041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_85
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 439
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1282886718ac9070800000000000000
+      internalID: 8114545447105888797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_86
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 447
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80f97c96989a0ea0800000000000000
+      internalID: -5905740188705230707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_87
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 437
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bec8569a2974d100800000000000000
+      internalID: 131863512918576819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_88
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 445
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef276bcb9b36dbc00800000000000000
+      internalID: 917999548439622398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_89
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 438
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81728dc033d0198d0800000000000000
+      internalID: -2841475376984086760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_90
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 444
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0bf8609b9c78ad0800000000000000
+      internalID: -2699967655069110071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_91
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 436
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f409344a47df67550800000000000000
+      internalID: 6158388217889656911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_92
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 435
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11eaff418abb0a820800000000000000
+      internalID: 2927546088372022801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_93
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 431
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1457689fcb0ae4b0800000000000000
+      internalID: -5410499016089185249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_94
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 435
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160bd29cd52cc1f40800000000000000
+      internalID: 5700644936407167073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_95
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 427
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2cd090faabf0890800000000000000
+      internalID: -7489562394359905556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_96
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 426
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e345ce2aa8aba970800000000000000
+      internalID: 8767286548489389026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_97
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 421
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f852ad43331c92d10800000000000000
+      internalID: 2101423126819251599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_98
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 420
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0ff772cba64c0f0800000000000000
+      internalID: -1097635052822466393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_99
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 428
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76f72baf42a896b0800000000000000
+      internalID: -5289299299289008516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_100
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 429
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bb599393142e7b0800000000000000
+      internalID: -5196519305997075604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_101
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 423
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c346a4be288814a0800000000000000
+      internalID: -6622393517867646011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_102
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 410
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f3487c74a360ea0800000000000000
+      internalID: -5906969781285404797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_103
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 424
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be151fb6d49788700800000000000000
+      internalID: 542817128528564715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_104
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 419
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea19e2405bbc8a20800000000000000
+      internalID: 3066031399726815980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_105
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 417
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d5bdcb5c789d4a0800000000000000
+      internalID: -6568069298196357835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_106
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 418
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2179361da35a78030800000000000000
+      internalID: 3496945307716130578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_107
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 413
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a60156e1d8774ec0800000000000000
+      internalID: -3582762135642372443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_108
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 413
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4e1f9fdcca2e3e0800000000000000
+      internalID: -2025866881701649236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_109
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 410
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8b98ca9e3fa44e0800000000000000
+      internalID: -1996515299837757242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_110
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 409
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b54af57cbbdef10800000000000000
+      internalID: 2300701449633684249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_111
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 405
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbda977a4e91d0d0800000000000000
+      internalID: -3399762201016607810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_112
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 395
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d22125af54780e0800000000000000
+      internalID: -2267766945936691898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_113
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 408
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d510dc27cdd64c0800000000000000
+      internalID: -4292532484190413537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_114
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 403
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509c48d6908e43f60800000000000000
+      internalID: 8013284764188723461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_115
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 405
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b02fec4ef237f20800000000000000
+      internalID: 3419129201875356483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_116
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 402
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7135c82760d2451d0800000000000000
+      internalID: -3363013516024065257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_117
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 404
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0113a0d5caef0f0800000000000000
+      internalID: -1081237344919416655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_118
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 397
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509383739f7dfac50800000000000000
+      internalID: 6678794237786994949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_119
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 394
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b65da8b15c22130800000000000000
+      internalID: 3540608979150662551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_120
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 393
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a86905763b62510800000000000000
+      internalID: 1524102780226538130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_121
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 395
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ee1b4c29b03a1c0800000000000000
+      internalID: -4493735278192497019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_122
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 390
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d71767c726ded370800000000000000
+      internalID: 8349346225528969175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_123
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 381
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cefd760f19efdc90800000000000000
+      internalID: -7142734164524138813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_124
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 385
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964cc536e5d428000800000000000000
+      internalID: 36676814761673833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_125
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 357
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0740f99ba773c1a0800000000000000
+      internalID: -6790452234238802162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_126
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 248
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597c3c75fe420d670800000000000000
+      internalID: 8561383502019544981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_127
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 241
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b410fc6ac2c2720800000000000000
+      internalID: 2822680161403620131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_128
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 238
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f86adeb15e4c42b0800000000000000
+      internalID: -5599014123727066893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_129
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 232
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378e6a1ab741ae340800000000000000
+      internalID: 4893746466317068403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_130
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 237
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dabbf822a3146620800000000000000
+      internalID: 2766357658305542868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_131
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 225
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7970e9154ac6143d0800000000000000
+      internalID: -3224176405220817001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_132
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 231
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97759d1bffb157880800000000000000
+      internalID: -8613947927261784199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_133
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 223
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1338986fb86c22580800000000000000
+      internalID: -8853295613018012879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_134
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 216
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4deab3912c7493a50800000000000000
+      internalID: 6501306436058590932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_135
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 215
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994b309773e5934a0800000000000000
+      internalID: -6613150985470364519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_136
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 219
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d43878a3eb84740800000000000000
+      internalID: 5136564533606960513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_137
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 216
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7633db3786e0a080800000000000000
+      internalID: -9178082572082399617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_138
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 213
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3f6d5a464cc43d0800000000000000
+      internalID: -3220983696918645852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_139
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 215
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbf16547bf71d390800000000000000
+      internalID: -7795309054881825832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_140
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 209
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de01ebbeab74a8e50800000000000000
+      internalID: 6812336254495887597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_141
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 209
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425701edc9e79a9c0800000000000000
+      internalID: -3915459188816317148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_142
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 201
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ee68876b9a344f0800000000000000
+      internalID: -845645703844270447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_143
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 207
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7250f2c889f597120800000000000000
+      internalID: 2412064184225170727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_144
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 202
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f563f371b194a40800000000000000
+      internalID: 5352839418765270901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_145
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 207
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106ac27eb4a2d6710800000000000000
+      internalID: 1688051940823180801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_146
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 200
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18299923d0afdf3f0800000000000000
+      internalID: -865260618794823039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_147
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 199
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b661a1025ff50a5a0800000000000000
+      internalID: -6512099554767530389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_148
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 202
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324e526f1f0531a40800000000000000
+      internalID: 5337698983511188515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_149
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 187
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f65b18a553bd1780800000000000000
+      internalID: -8710608923790715146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_150
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 195
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22bbd302473263430800000000000000
+      internalID: 3762233520378723106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_151
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 186
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebdabf26f31aad60800000000000000
+      internalID: 7902150444258614241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_152
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 184
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345b8d730ef5e54f0800000000000000
+      internalID: -838127064030071485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_153
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 193
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea42ed6fb2a4955a0800000000000000
+      internalID: -6532108231838391122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_154
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 194
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000d88eb16bb77710800000000000000
+      internalID: 1691026213583769600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_155
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 188
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffac03f21e38f6d0800000000000000
+      internalID: -2956544904260702216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_156
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 174
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f466454e70b3140800000000000000
+      internalID: 4700359313341173537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_157
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 178
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314be3f2fff5af720800000000000000
+      internalID: 2880720461270791187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_158
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 177
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a12a02194c02cf20800000000000000
+      internalID: 3441326573239280036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_159
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 180
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b9ce9e8cb66fce0800000000000000
+      internalID: -1371790525825508602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_160
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 171
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1b83c634cbe9480800000000000000
+      internalID: -8890461616618294842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_161
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 164
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2128c65267293e340800000000000000
+      internalID: 4891914656386155026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_162
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 166
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bef20779282feef0800000000000000
+      internalID: -76798510086553933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_163
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 164
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6abed7e39b79709f0800000000000000
+      internalID: -502266011555337306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_164
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 165
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c070bc16da4d21a60800000000000000
+      internalID: 7643405358736279308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_165
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 162
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6015ab4cb1f2100800000000000000
+      internalID: 85317449696741101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_166
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 156
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae22c31764fbe89d0800000000000000
+      internalID: -2770066411517893910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_167
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 159
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445bfa1d8b64f1e20800000000000000
+      internalID: 3323452809628595524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_168
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 158
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234fb3236af6cb130800000000000000
+      internalID: 3583862163078116402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_169
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 155
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7662f42fa3f6d60800000000000000
+      internalID: 7885586284933441472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_170
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 155
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8a212c4ef5c8380800000000000000
+      internalID: -8967687321888315214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_171
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 145
+        width: 41
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf600d1e5fb38ad50800000000000000
+      internalID: 6748709968856221435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_172
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 153
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12669ce9a0afb1240800000000000000
+      internalID: 4763675954395047457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_173
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 149
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7819ea4627920d9b0800000000000000
+      internalID: -5057496810244894329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_174
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 154
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bd92111bde31bb0800000000000000
+      internalID: -4966364619306575083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_175
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 147
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d457748e57bab3dd0800000000000000
+      internalID: -2505220244805028531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_176
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 144
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dce8d47af955fea0800000000000000
+      internalID: -5839662409578910512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_177
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 144
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d52c40d53d2dc160800000000000000
+      internalID: 7047338701055862225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_178
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 147
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c4180ebc170c340800000000000000
+      internalID: 4882027116528487491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_179
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 136
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e28e534486b685e0800000000000000
+      internalID: -1907636712962620701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_180
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 139
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa91d73c5890d580800000000000000
+      internalID: -8804369749668422999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_181
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 129
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c222371a6b23abdf0800000000000000
+      internalID: -163762676471487956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_182
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 131
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7460439864908a80800000000000000
+      internalID: -8466604122588552069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_183
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 139
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e511a10356089d30800000000000000
+      internalID: 4438304386353010151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_184
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 131
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da2057a56b78fe90800000000000000
+      internalID: -6991702744963732781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_185
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 134
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f943706bd2309d410800000000000000
+      internalID: 1502235445567108255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_186
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 128
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f706b2cc899a19c0800000000000000
+      internalID: -3955680492850378766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: island background edited-01_187
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 115
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ff0f9df0e8afa70800000000000000
+      internalID: 8861551415536975714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      island background edited-01_65: -2222027228289845757
+      island background edited-01_73: 6709262500714743807
+      island background edited-01_167: 3323452809628595524
+      island background edited-01_20: -4960113089026594015
+      island background edited-01_141: -3915459188816317148
+      island background edited-01_110: 2300701449633684249
+      island background edited-01_164: 7643405358736279308
+      island background edited-01_107: -3582762135642372443
+      island background edited-01_101: -6622393517867646011
+      island background edited-01_124: 36676814761673833
+      island background edited-01_26: -3015367180766241673
+      island background edited-01_3: 519135739575518913
+      island background edited-01_32: 5601465281565333715
+      island background edited-01_151: 7902150444258614241
+      island background edited-01_42: 366432883395644146
+      island background edited-01_82: 7217160976786946427
+      island background edited-01_11: -5237717655081704412
+      island background edited-01_77: -2135118924605834959
+      island background edited-01_74: 6722204793044462659
+      island background edited-01_22: 8598172302616866786
+      island background edited-01_150: 3762233520378723106
+      island background edited-01_34: -9039934938814295411
+      island background edited-01_81: -8910322568129814704
+      island background edited-01_37: 6603228914712586663
+      island background edited-01_152: -838127064030071485
+      island background edited-01_128: -5599014123727066893
+      island background edited-01_159: -1371790525825508602
+      island background edited-01_12: -1279425831813368707
+      island background edited-01_170: -8967687321888315214
+      island background edited-01_24: 6368444847026240519
+      island background edited-01_56: -4975221836162878712
+      island background edited-01_62: -2582264997645544127
+      island background edited-01_70: 3245810601959041228
+      island background edited-01_25: -7448088779090989133
+      island background edited-01_47: -8078334954728317954
+      island background edited-01_149: -8710608923790715146
+      island background edited-01_119: 3540608979150662551
+      island background edited-01_27: 7898861409018577307
+      island background edited-01_31: 33282493025204993
+      island background edited-01_144: 5352839418765270901
+      island background edited-01_29: 5692202168431989818
+      island background edited-01_7: 1108609157560117316
+      island background edited-01_23: -2659807665821625756
+      island background edited-01_72: 1394084952803362423
+      island background edited-01_5: -2867124582463223376
+      island background edited-01_117: -1081237344919416655
+      island background edited-01_57: 6282414820202760306
+      island background edited-01_46: 8990167475381356994
+      island background edited-01_21: 8841687456188717418
+      island background edited-01_6: 8204797723904971395
+      island background edited-01_180: -8804369749668422999
+      island background edited-01_138: -3220983696918645852
+      island background edited-01_35: -5033559150346752614
+      island background edited-01_55: 7699216493191388191
+      island background edited-01_108: -2025866881701649236
+      island background edited-01_154: 1691026213583769600
+      island background edited-01_169: 7885586284933441472
+      island background edited-01_40: -2241836596912607218
+      island background edited-01_80: -4972844429234088488
+      island background edited-01_163: -502266011555337306
+      island background edited-01_121: -4493735278192497019
+      island background edited-01_177: 7047338701055862225
+      island background edited-01_132: -8613947927261784199
+      island background edited-01_83: -3627349523880583114
+      island background edited-01_59: -360317458343323469
+      island background edited-01_181: -163762676471487956
+      island background edited-01_148: 5337698983511188515
+      island background edited-01_1: -6252709771336313214
+      island background edited-01_2: -4678189779132706402
+      island background edited-01_145: 1688051940823180801
+      island background edited-01_136: 5136564533606960513
+      island background edited-01_114: 8013284764188723461
+      island background edited-01_122: 8349346225528969175
+      island background edited-01_156: 4700359313341173537
+      island background edited-01_67: -2973838606451455082
+      island background edited-01_98: -1097635052822466393
+      island background edited-01_171: 6748709968856221435
+      island background edited-01_53: 2882831140290285627
+      island background edited-01_64: -8126056699823321034
+      island background edited-01_94: 5700644936407167073
+      island background edited-01_137: -9178082572082399617
+      island background edited-01_173: -5057496810244894329
+      island background edited-01_172: 4763675954395047457
+      island background edited-01_158: 3441326573239280036
+      island background edited-01_100: -5196519305997075604
+      island background edited-01_165: 85317449696741101
+      island background edited-01_182: -8466604122588552069
+      island background edited-01_179: -1907636712962620701
+      island background edited-01_14: 8308297844508226376
+      island background edited-01_66: 16296656224085963
+      island background edited-01_183: 4438304386353010151
+      island background edited-01_133: -8853295613018012879
+      island background edited-01_142: -845645703844270447
+      island background edited-01_93: -5410499016089185249
+      island background edited-01_97: 2101423126819251599
+      island background edited-01_52: -3979170987710477913
+      island background edited-01_113: -4292532484190413537
+      island background edited-01_186: -3955680492850378766
+      island background edited-01_140: 6812336254495887597
+      island background edited-01_185: 1502235445567108255
+      island background edited-01_30: 5352040304470452894
+      island background edited-01_84: 4395078190675183041
+      island background edited-01_147: -6512099554767530389
+      island background edited-01_126: 8561383502019544981
+      island background edited-01_174: -4966364619306575083
+      island background edited-01_166: -2770066411517893910
+      island background edited-01_96: 8767286548489389026
+      island background edited-01_178: 4882027116528487491
+      island background edited-01_103: 542817128528564715
+      island background edited-01_135: -6613150985470364519
+      island background edited-01_51: -8472948690113177212
+      island background edited-01_90: -2699967655069110071
+      island background edited-01_87: 131863512918576819
+      island background edited-01_88: 917999548439622398
+      island background edited-01_123: -7142734164524138813
+      island background edited-01_89: -2841475376984086760
+      island background edited-01_13: 3634177607421918086
+      island background edited-01_48: 2678848776389996839
+      island background edited-01_104: 3066031399726815980
+      island background edited-01_45: 5951989231745118868
+      island background edited-01_36: -8958448872949202282
+      island background edited-01_115: 3419129201875356483
+      island background edited-01_139: -7795309054881825832
+      island background edited-01_38: -145909439492080470
+      island background edited-01_79: 8971792845684814182
+      island background edited-01_18: 5312073895073006955
+      island background edited-01_95: -7489562394359905556
+      island background edited-01_50: 4383833641371433129
+      island background edited-01_168: 3583862163078116402
+      island background edited-01_184: -6991702744963732781
+      island background edited-01_134: 6501306436058590932
+      island background edited-01_39: 1014127279636795584
+      island background edited-01_43: 2465681776453710979
+      island background edited-01_58: -195319265756638459
+      island background edited-01_69: 6102083838363994725
+      island background edited-01_78: -2963884330700148205
+      island background edited-01_91: 6158388217889656911
+      island background edited-01_162: -76798510086553933
+      island background edited-01_116: -3363013516024065257
+      island background edited-01_105: -6568069298196357835
+      island background edited-01_146: -865260618794823039
+      island background edited-01_8: 453442992923532984
+      island background edited-01_10: -7140645462544955360
+      island background edited-01_15: 8920631763945887776
+      island background edited-01_19: 6401259383658855707
+      island background edited-01_71: -828878122664895693
+      island background edited-01_54: 1064892396816920697
+      island background edited-01_161: 4891914656386155026
+      island background edited-01_160: -8890461616618294842
+      island background edited-01_120: 1524102780226538130
+      island background edited-01_28: 1499612138921015720
+      island background edited-01_33: 4598999294507190069
+      island background edited-01_102: -5906969781285404797
+      island background edited-01_127: 2822680161403620131
+      island background edited-01_106: 3496945307716130578
+      island background edited-01_131: -3224176405220817001
+      island background edited-01_187: 8861551415536975714
+      island background edited-01_76: -4816847335817135712
+      island background edited-01_63: -8485688560903594135
+      island background edited-01_75: -3991630344904863976
+      island background edited-01_86: -5905740188705230707
+      island background edited-01_111: -3399762201016607810
+      island background edited-01_176: -5839662409578910512
+      island background edited-01_175: -2505220244805028531
+      island background edited-01_9: 39211747929197336
+      island background edited-01_125: -6790452234238802162
+      island background edited-01_157: 2880720461270791187
+      island background edited-01_4: -59431583669668938
+      island background edited-01_17: -4697491408882546816
+      island background edited-01_153: -6532108231838391122
+      island background edited-01_99: -5289299299289008516
+      island background edited-01_155: -2956544904260702216
+      island background edited-01_143: 2412064184225170727
+      island background edited-01_68: 5119481994083493672
+      island background edited-01_109: -1996515299837757242
+      island background edited-01_85: 8114545447105888797
+      island background edited-01_92: 2927546088372022801
+      island background edited-01_16: 563699514877204200
+      island background edited-01_130: 2766357658305542868
+      island background edited-01_60: -8543502608353534279
+      island background edited-01_0: 7969737118563086815
+      island background edited-01_41: 4809389308114237852
+      island background edited-01_49: -7632381553878651982
+      island background edited-01_118: 6678794237786994949
+      island background edited-01_61: -1430592102771987341
+      island background edited-01_129: 4893746466317068403
+      island background edited-01_112: -2267766945936691898
+      island background edited-01_44: -888584512543604934
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
