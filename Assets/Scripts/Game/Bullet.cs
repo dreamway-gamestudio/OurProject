@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
     Vector3 target, target_front, target_end, target_random;
     int random;
     Vector3 UpdatePosition;
-
+    
     //public GameObject FlyingTextPrefab;
     void Start()
     {
