@@ -20,7 +20,7 @@ public class Coin : MonoBehaviour
     {
         StartCoroutine(InitializeCoins());
     }
-    
+    ////
     IEnumerator InitializeCoins()
     {
         // Ждем инициализации
