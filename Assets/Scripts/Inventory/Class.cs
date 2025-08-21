@@ -76,7 +76,6 @@ public class Class : MonoBehaviour
                 }
             }
             Cards.CardsInit();
-            //DicePlayerPrefs.InitDiceInfo();
             if (PlayerPrefs.GetInt(DiceName + "Class") > 14)
             {
                 FindFromInfoPanel("DiceClass_Text").GetComponent<Text>().text = "MAX"; // maxtext

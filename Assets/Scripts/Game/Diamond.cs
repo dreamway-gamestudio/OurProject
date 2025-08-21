@@ -64,8 +64,5 @@ public class Diamond : MonoBehaviour
         Debug.Log("Diamonds force-saved!");
     }
 
-    void OnDestroy()
-    {
-        DataSave.SetIntCritical("Diamonds", Diamonds);
-    }
+    
 }
