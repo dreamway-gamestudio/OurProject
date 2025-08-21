@@ -54,7 +54,7 @@ public class InfoPanel : MonoBehaviour
 
     public GameObject GetFromDiceField(string findingName)
     {
-        if (PlayerPrefs.GetString("InfoPanelOpened") == "DiceOriginal")
+        if (DataSave.GetString("InfoPanelOpened") == "DiceOriginal")
         {
             //print("original");
             DiceField = EventSystem.current.currentSelectedGameObject.transform.parent.parent.gameObject;
@@ -68,7 +68,7 @@ public class InfoPanel : MonoBehaviour
                 }
             }
         }
-        else if (PlayerPrefs.GetString("InfoPanelOpened") == "DragSlot")
+        else if (DataSave.GetString("InfoPanelOpened") == "DragSlot")
         {
             DiceField = GameObject.Find(DragSlot.ParentName);
             //print(DiceField.name);
@@ -81,7 +81,7 @@ public class InfoPanel : MonoBehaviour
                 }
             }
         }
-        else if (PlayerPrefs.GetString("InfoPanelOpened") == "LockedDice" || PlayerPrefs.GetString("InfoPanelOpened") == "DiceIsUpgrade")
+        else if (DataSave.GetString("InfoPanelOpened") == "LockedDice" || DataSave.GetString("InfoPanelOpened") == "DiceIsUpgrade")
         {
             // print("locked");
             DiceField = EventSystem.current.currentSelectedGameObject.transform.parent.gameObject;
@@ -164,13 +164,13 @@ public class InfoPanel : MonoBehaviour
     {
         diceName = GetFromDiceField("DiceNameText").GetComponent<Text>().text;
 
-        if (PlayerPrefs.GetInt(diceName + "Class") > 14)
+        if (DataSave.GetInt(diceName + "Class") > 14)
         {
             GetFromInfoPanel("DiceClass_Text").GetComponent<Text>().text = "MAX"; // maxtext
         }
         else
         {
-            GetFromInfoPanel("DiceClass_Text").GetComponent<Text>().text = "Class " + PlayerPrefs.GetInt(diceName + "Class");
+            GetFromInfoPanel("DiceClass_Text").GetComponent<Text>().text = "Class " + DataSave.GetInt(diceName + "Class");
         }
 
         UpdateCardBarInfo();
@@ -259,7 +259,7 @@ public class InfoPanel : MonoBehaviour
 
         if (DicePlayerPrefs.GetRarity(diceName) == "Standard")
         {
-            if (PlayerPrefs.GetInt(diceName + "Class") < 15 && PlayerPrefs.GetInt(diceName + "TotalCards") >= Cards.standard[PlayerPrefs.GetInt(diceName + "Class") - 1])
+            if (DataSave.GetInt(diceName + "Class") < 15 && DataSave.GetInt(diceName + "TotalCards") >= Cards.standard[DataSave.GetInt(diceName + "Class") - 1])
             {
                 GetFromInfoPanel("UpgradeButton").GetComponent<Button>().interactable = true;
             }
@@ -270,7 +270,7 @@ public class InfoPanel : MonoBehaviour
         }
         else if (DicePlayerPrefs.GetRarity(diceName) == "Exclusive")
         {
-            if (PlayerPrefs.GetInt(diceName + "Class") < 15 && PlayerPrefs.GetInt(diceName + "TotalCards") >= Cards.exclusive[PlayerPrefs.GetInt(diceName + "Class") - 3])
+            if (DataSave.GetInt(diceName + "Class") < 15 && DataSave.GetInt(diceName + "TotalCards") >= Cards.exclusive[DataSave.GetInt(diceName + "Class") - 3])
             {
                 GetFromInfoPanel("UpgradeButton").GetComponent<Button>().interactable = true;
             }
@@ -281,7 +281,7 @@ public class InfoPanel : MonoBehaviour
         }
         else if (DicePlayerPrefs.GetRarity(diceName) == "Legendary")
         {
-            if (PlayerPrefs.GetInt(diceName + "Class") < 15 && PlayerPrefs.GetInt(diceName + "TotalCards") >= Cards.legendary[PlayerPrefs.GetInt(diceName + "Class") - 5])
+            if (DataSave.GetInt(diceName + "Class") < 15 && DataSave.GetInt(diceName + "TotalCards") >= Cards.legendary[DataSave.GetInt(diceName + "Class") - 5])
             {
                 GetFromInfoPanel("UpgradeButton").GetComponent<Button>().interactable = true;
             }
@@ -295,7 +295,7 @@ public class InfoPanel : MonoBehaviour
     {
 
         print(diceName);
-        GameObject thisDiceField = GameObject.Find(PlayerPrefs.GetString($"Dice_{diceName}_pos"));
+        GameObject thisDiceField = GameObject.Find(DataSave.GetString($"Dice_{diceName}_pos"));
         thisDiceField.GetComponent<DiceInfoPanel>().UseDice();
         ClosePanel();
     }
@@ -304,7 +304,7 @@ public class InfoPanel : MonoBehaviour
         if (Coin.Coins >= 500)
         {
             Coin.Coins -= 500;
-            PlayerPrefs.SetInt($"Dice_{diceName}_isUnlocked", 1);
+            DataSave.SetIntCritical($"Dice_{diceName}_isUnlocked", 1);
             ClosePanel();
             LockDice.CheckDiceBuyed();
         }
@@ -320,7 +320,7 @@ public class InfoPanel : MonoBehaviour
         if (Diamond.Diamonds >= diamondPrice)
         {
             Diamond.Diamonds -= diamondPrice;
-            PlayerPrefs.SetInt($"Dice_{diceName}_isUnlocked", 1);
+            DataSave.SetIntCritical($"Dice_{diceName}_isUnlocked", 1);
             ClosePanel();
             LockDice.CheckDiceBuyed();
         }
@@ -333,6 +333,6 @@ public class InfoPanel : MonoBehaviour
     {
         Destroy(GameObject.Find("CardBar(Clone)"));
         Info_Panel.SetActive(false);
-        PlayerPrefs.SetString("InfoPanelOpened", "null");
+        DataSave.SetString("InfoPanelOpened", "null");
     }
 }
