@@ -37,6 +37,7 @@ public class CloudDataManager : MonoBehaviour
     private bool isInitialized;
     private bool isAuthenticated;
     private bool _quit;
+    private bool _destroyed; // ДОБАВЛЕНО: флаг уничтожения
 
     private readonly object _cacheLock = new object();
     private const int MaxSaveRetries = 5;
@@ -46,40 +47,86 @@ public class CloudDataManager : MonoBehaviour
 
     void Awake()
     {
-        if (Instance != null) { Destroy(gameObject); return; }
+        // УЛУЧШЕНО: более безопасная проверка синглтона
+        if (Instance != null && Instance != this) 
+        { 
+            Destroy(gameObject); 
+            return; 
+        }
+        
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        Application.quitting += () => _quit = true; // во время выхода — не сохраняем в сеть
-        _ = InitializeServices();
+        Application.quitting += () => _quit = true;
+        
+        // ДОБАВЛЕНО: запускаем инициализацию через корутину для лучшего контроля
+        StartCoroutine(InitializeAsync());
+    }
+
+    // ДОБАВЛЕНО: обертка-корутина для безопасной инициализации
+    private IEnumerator InitializeAsync()
+    {
+        var task = InitializeServices();
+        
+        // Ждем завершения с проверкой на уничтожение
+        while (!task.IsCompleted)
+        {
+            if (_destroyed) yield break;
+            yield return null;
+        }
+        
+        if (task.IsFaulted && !_destroyed)
+        {
+            Debug.LogError($"Init error: {task.Exception?.GetBaseException()?.Message}");
+        }
     }
 
     private async Task InitializeServices()
     {
         try
         {
+            // ДОБАВЛЕНО: проверка перед каждым async вызовом
+            if (_destroyed) return;
+            
             await UnityServices.InitializeAsync();
+            
+            if (_destroyed) return; // проверка после async операции
+            
             if (!AuthenticationService.Instance.IsSignedIn)
+            {
                 await AuthenticationService.Instance.SignInAnonymouslyAsync();
+            }
+
+            if (_destroyed) return;
 
             isAuthenticated = true;
             await LoadAllData();
 
+            if (_destroyed) return;
+
             isInitialized = true;
-            autoSaveCo = StartCoroutine(AutoSaveRoutine());
+            
+            // ДОБАВЛЕНО: проверка перед запуском корутины
+            if (!_destroyed && gameObject != null)
+            {
+                autoSaveCo = StartCoroutine(AutoSaveRoutine());
+            }
 
             DebugLog("CloudDataManager initialized");
         }
         catch (System.Exception e)
         {
-            Debug.LogError($"Init error: {e.Message}");
+            if (!_destroyed) // логируем только если объект еще жив
+            {
+                Debug.LogError($"Init error: {e.Message}");
+            }
         }
     }
 
     // ---------- ПУБЛИЧНЫЕ API: УСТАНОВКА ДАННЫХ ----------
 
-    // Обычное изменение: кладём в кеш и в очередь. Сохранение — дебаунс/авто.
     public void Set(string key, object value)
     {
+        if (_destroyed) return; // ДОБАВЛЕНО: проверка на уничтожение
         
         lock (_cacheLock)
         {
@@ -89,21 +136,24 @@ public class CloudDataManager : MonoBehaviour
 
         if (criticalKeys.Contains(key))
         {
-            // критич. ключ — сразу просим флуш (но всё равно через очередь)
             _ = FlushAsync();
         }
         else
         {
             if (delayedSaveCo != null) StopCoroutine(delayedSaveCo);
-            delayedSaveCo = StartCoroutine(DelayedSaveRoutine());
+            if (!_destroyed && gameObject != null) // ДОБАВЛЕНО: проверка перед StartCoroutine
+            {
+                delayedSaveCo = StartCoroutine(DelayedSaveRoutine());
+            }
         }
 
         DebugLog($"Queued: {key}={value}");
     }
 
-    // Критическое изменение: кладём в очередь и сразу флушим
     public async Task SetCritical(string key, object value)
     {
+        if (_destroyed) return;
+        
         lock (_cacheLock)
         {
             cachedData[key] = value;
@@ -113,9 +163,10 @@ public class CloudDataManager : MonoBehaviour
         DebugLog($"Critical queued & flushed: {key}={value}");
     }
 
-    // Пакет изменений (всё в очередь, затем флуш)
     public async Task SetBatch(Dictionary<string, object> data)
     {
+        if (_destroyed) return;
+        
         lock (_cacheLock)
         {
             foreach (var kv in data)
@@ -139,10 +190,56 @@ public class CloudDataManager : MonoBehaviour
     public Task SetStringCritical(string key, string v) => SetCritical(key, v);
     public Task SetBoolCritical(string key, bool v) => SetCritical(key, v);
 
+    // Обычное удаление: помечаем в кеше и очереди как удаленный. Сохранение — дебаунс/авто.
+    public void Delete(string key)
+    {
+        if (_destroyed) return;
+        
+        lock (_cacheLock)
+        {
+            cachedData.Remove(key);
+            // Добавляем в очередь специальный маркер удаления
+            pendingChanges[key] = null;
+        }
+
+        if (criticalKeys.Contains(key))
+        {
+            // критич. ключ — сразу просим флуш
+            _ = FlushAsync();
+        }
+        else
+        {
+            if (delayedSaveCo != null) StopCoroutine(delayedSaveCo);
+            if (!_destroyed && gameObject != null)
+            {
+                delayedSaveCo = StartCoroutine(DelayedSaveRoutine());
+            }
+        }
+
+        DebugLog($"Queued for deletion: {key}");
+    }
+
+    // Критическое удаление: помечаем в очереди и сразу флушим
+    public async Task DeleteCritical(string key)
+    {
+        if (_destroyed) return;
+        
+        lock (_cacheLock)
+        {
+            cachedData.Remove(key);
+            pendingChanges[key] = null;
+        }
+        
+        await FlushAsync();
+        DebugLog($"Critical deletion flushed: {key}");
+    }
+
     // ---------- ПУБЛИЧНЫЕ API: ПОЛУЧЕНИЕ ДАННЫХ ----------
 
     public int GetInt(string key, int def = 0)
     {
+        if (_destroyed) return def;
+        
         lock (_cacheLock)
         {
             if (!cachedData.TryGetValue(key, out var v) || v == null) return def;
@@ -161,6 +258,8 @@ public class CloudDataManager : MonoBehaviour
 
     public float GetFloat(string key, float def = 0f)
     {
+        if (_destroyed) return def;
+        
         lock (_cacheLock)
         {
             if (!cachedData.TryGetValue(key, out var v) || v == null) return def;
@@ -178,6 +277,8 @@ public class CloudDataManager : MonoBehaviour
 
     public string GetString(string key, string def = "")
     {
+        if (_destroyed) return def;
+        
         lock (_cacheLock)
         {
             if (!cachedData.TryGetValue(key, out var v) || v == null) return def;
@@ -187,6 +288,8 @@ public class CloudDataManager : MonoBehaviour
 
     public bool GetBool(string key, bool def = false)
     {
+        if (_destroyed) return def;
+        
         lock (_cacheLock)
         {
             if (!cachedData.TryGetValue(key, out var v) || v == null) return def;
@@ -202,20 +305,23 @@ public class CloudDataManager : MonoBehaviour
         }
     }
 
-    public bool HasKey(string key) { lock (_cacheLock) return cachedData.ContainsKey(key); }
-
+    public bool HasKey(string key) 
+    { 
+        if (_destroyed) return false;
+        lock (_cacheLock) return cachedData.ContainsKey(key); 
+    }
 
     // ---------- ФЛУШ ОЧЕРЕДИ (ЕДИНСТВЕННАЯ ТОЧКА СЕТИ) ----------
 
-    // Сериализованно сохраняем все накопленные изменения; новые изменения во время флуша не теряются
     private async Task FlushAsync()
     {
-        if (_quit || !isAuthenticated) return;
+        if (_quit || !isAuthenticated || _destroyed) return; // ДОБАВЛЕНО: проверка _destroyed
+        
         await _saveLock.WaitAsync();
         try
         {
             int attempt = 0;
-            while (true)
+            while (!_destroyed) // ДОБАВЛЕНО: проверка в цикле
             {
                 Dictionary<string, object> toSave;
                 lock (_cacheLock)
@@ -227,12 +333,16 @@ public class CloudDataManager : MonoBehaviour
 
                 try
                 {
+                    if (_destroyed) break; // проверка перед сетевым вызовом
+                    
                     await CloudSaveService.Instance.Data.Player.SaveAsync(toSave);
                     attempt = 0;
                     DebugLog($"Saved {toSave.Count} items");
                 }
                 catch (Exception e)
                 {
+                    if (_destroyed) break;
+                    
                     // вернуть изменения в очередь
                     lock (_cacheLock)
                         foreach (var kv in toSave) pendingChanges[kv.Key] = kv.Value;
@@ -254,9 +364,10 @@ public class CloudDataManager : MonoBehaviour
         finally { _saveLock.Release(); }
     }
 
-    // Принудительная синхронизация: флуш + перезагрузка
     public async Task ForceSync()
     {
+        if (_destroyed) return;
+        
         await FlushAsync();
         await LoadAllData();
         DebugLog("Force sync completed");
@@ -266,10 +377,14 @@ public class CloudDataManager : MonoBehaviour
 
     public async Task LoadAllData()
     {
-        if (!isAuthenticated) return;
+        if (!isAuthenticated || _destroyed) return;
+        
         try
         {
             var saved = await CloudSaveService.Instance.Data.Player.LoadAllAsync();
+            
+            if (_destroyed) return; // проверка после async операции
+            
             int count;
             lock (_cacheLock)
             {
@@ -282,44 +397,89 @@ public class CloudDataManager : MonoBehaviour
         }
         catch (System.Exception e)
         {
-            Debug.LogError($"Load error: {e.Message}");
+            if (!_destroyed)
+            {
+                Debug.LogError($"Load error: {e.Message}");
+            }
         }
     }
-
 
     // ---------- ЖИЗНЕННЫЙ ЦИКЛ/СЕРВИСНЫЕ ----------
 
     IEnumerator DelayedSaveRoutine()
     {
         yield return new WaitForSeconds(saveDelay);
-        _ = FlushAsync(); // мягкий флуш
+        if (!_destroyed) // ДОБАВЛЕНО: проверка перед флушем
+        {
+            _ = FlushAsync();
+        }
         delayedSaveCo = null;
     }
 
     IEnumerator AutoSaveRoutine()
     {
-        while (true)
+        while (!_destroyed) // ДОБАВЛЕНО: проверка в условии цикла
         {
             yield return new WaitForSeconds(autoSaveInterval);
-            _ = FlushAsync();
+            if (!_destroyed)
+            {
+                _ = FlushAsync();
+            }
         }
     }
 
-    void OnApplicationPause(bool pause) { if (pause) _ = FlushAsync(); }
-    void OnApplicationFocus(bool focus) { if (!focus) _ = FlushAsync(); }
+    async System.Threading.Tasks.Task TryFlushOnSuspend()
+    {
+        if (_destroyed) return;
+        
+        try
+        {
+            var t = CloudDataManager.Instance?.ForceSync() ?? System.Threading.Tasks.Task.CompletedTask;
+            await System.Threading.Tasks.Task.WhenAny(t, System.Threading.Tasks.Task.Delay(1000));
+        }
+        catch { /* молча */ }
+    }
+
+    void OnApplicationPause(bool pause) 
+    { 
+        if (pause && !_destroyed) _ = TryFlushOnSuspend(); 
+    }
+    
+    void OnApplicationFocus(bool focus) 
+    { 
+        if (!focus && !_destroyed) _ = TryFlushOnSuspend(); 
+    }
 
     void OnDestroy()
     {
+        _destroyed = true; // ДОБАВЛЕНО: устанавливаем флаг уничтожения
+        
         if (autoSaveCo != null) StopCoroutine(autoSaveCo);
         if (delayedSaveCo != null) StopCoroutine(delayedSaveCo);
-        // ВАЖНО: здесь НЕ трогаем сеть — редактор/приложение уже в выгрузке.
+        
+        // Очищаем Instance только если это действительно мы
+        if (Instance == this)
+        {
+            Instance = null;
+        }
     }
 
     // ---------- Свойства/утилиты ----------
-    public bool IsInitialized => isInitialized;
-    public bool IsAuthenticated => isAuthenticated;
-    public string PlayerId => AuthenticationService.Instance.IsSignedIn ? AuthenticationService.Instance.PlayerId : "Not signed in";
-    public int PendingChangesCount { get { lock (_cacheLock) return pendingChanges.Count; } }
+    public bool IsInitialized => isInitialized && !_destroyed;
+    public bool IsAuthenticated => isAuthenticated && !_destroyed;
+    public string PlayerId => (!_destroyed && AuthenticationService.Instance.IsSignedIn) ? AuthenticationService.Instance.PlayerId : "Not signed in";
+    public int PendingChangesCount 
+    { 
+        get 
+        { 
+            if (_destroyed) return 0;
+            lock (_cacheLock) return pendingChanges.Count; 
+        } 
+    }
 
-    private void DebugLog(string msg) { if (enableDebugLogs) Debug.Log($"[CloudDataManager] {msg}"); }
+    private void DebugLog(string msg) 
+    { 
+        if (enableDebugLogs && !_destroyed) 
+            Debug.Log($"[CloudDataManager] {msg}"); 
+    }
 }

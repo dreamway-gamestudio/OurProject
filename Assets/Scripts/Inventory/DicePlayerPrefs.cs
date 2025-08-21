@@ -166,38 +166,38 @@ public class DicePlayerPrefs : MonoBehaviour
     // ===== БАЗОВЫЕ УТИЛИТЫ (работают через DataSave) =====
     
     // ===== ATTACK =====
-    public int AddAttack(string name, int delta)                      // +N урона
+    public static int AddAttack(string name, int delta)                      // +N урона
         => AddInt(name + "Attack", delta, 0);
 
-    public int MulAttack(string name, float mul)                      // × множитель (1.10f = +10%)
+    public static int MulAttack(string name, float mul)                      // × множитель (1.10f = +10%)
         => MulInt(name + "Attack", mul, 0);
 
     // ===== RELOAD TIME (меньше = лучше) =====
-    public float ReduceReloadTime(string name, float delta)           // -N сек, с нижним пределом
+    public static float ReduceReloadTime(string name, float delta)           // -N сек, с нижним пределом
         => AddFloat(name + "ReloadTime", -Mathf.Abs(delta), 0.05f);
 
-    public float MulReloadTime(string name, float mul)                // × множитель (0.9f = -10%)
+    public static float MulReloadTime(string name, float mul)                // × множитель (0.9f = -10%)
         => MulFloat(name + "ReloadTime", Mathf.Clamp(mul, 0.1f, 10f), 0.05f);
 
     // ===== SHOOT SPEED (больше = быстрее) =====
-    public float AddShootSpeed(string name, float delta)              // +N скорости
+    public static float AddShootSpeed(string name, float delta)              // +N скорости
         => AddFloat(name + "ShootSpeed", delta, 0.1f);
 
-    public float MulShootSpeed(string name, float mul)                // × множитель (1.15f = +15%)
+    public static float MulShootSpeed(string name, float mul)                // × множитель (1.15f = +15%)
         => MulFloat(name + "ShootSpeed", Mathf.Max(0.1f, mul), 0.1f);
 
     // ===== TOTAL CARDS (материал для апгрейда) =====
-    public int AddCards(string name, int delta)                       // +N/−N карт, не ниже 0
+    public static int AddCards(string name, int delta)                       // +N/−N карт, не ниже 0
         => AddInt(name + "TotalCards", delta, 0);
 
-    public void SetCards(string name, int value)                      // жёсткая установка (минимум 0)
+    public static void SetCards(string name, int value)                      // жёсткая установка (минимум 0)
         => DataSave.SetInt(name + "TotalCards", Mathf.Max(0, value));
 
     // ===== DIAMOND PRICE (для баланса/админки) =====
-    public int AddDiamondPrice(string name, int delta)                // +N/−N к цене, не ниже 0
+    public static int AddDiamondPrice(string name, int delta)                // +N/−N к цене, не ниже 0
         => AddInt(name + "DiamondPrice", delta, 0);
 
-    public void SetDiamondPrice(string name, int value)               // жёсткая установка цены
+    public static void SetDiamondPrice(string name, int value)               // жёсткая установка цены
         => DataSave.SetInt(name + "DiamondPrice", Mathf.Max(0, value));
 
 
