@@ -20,8 +20,7 @@ public class DiceInfoPanel : MonoBehaviour
     GameObject Finding_GameObject;
     void Start()
     {
-        DataSave.SetString("InfoPanelOpened", "DiceOriginal");
-        DataSave.SetInt("upgradforinfo", 1);
+        PlayerPrefs.SetInt("upgradforinfo", 1);
         InfoPanel = GameObject.FindObjectOfType<InfoPanel>();
         Inventory = GameObject.FindObjectOfType<Inventory>();
         string[] splitArray = DrageblleDice.name.Split(char.Parse("_"));
@@ -67,8 +66,8 @@ public class DiceInfoPanel : MonoBehaviour
     public void ChooseDice()
     {
 
-		DataSave.SetString("InfoPanelOpened", "DiceOriginal");
-		if (LockDice.DiceIsUnlocked(diceName) && !Class.DiceIsUpgrade(diceName, DataSave.GetString(diceName + "Rarity", "")))
+		PlayerPrefs.SetString("InfoPanelOpened", "DiceOriginal");
+		if (LockDice.DiceIsUnlocked(diceName) && !Class.DiceIsUpgrade(diceName, PlayerPrefs.GetString(diceName + "Rarity", "")))
         {
             BlackImages(false);
             HidePower();
@@ -77,7 +76,7 @@ public class DiceInfoPanel : MonoBehaviour
             _isDiceUsed = false;
             InfoButton_Interactible(true);
         }
-        else if (Class.DiceIsUpgrade(diceName, DataSave.GetString(diceName + "Rarity")) && LockDice.DiceIsUnlocked(diceName))
+        else if (Class.DiceIsUpgrade(diceName, PlayerPrefs.GetString(diceName + "Rarity")) && LockDice.DiceIsUnlocked(diceName))
         {
             if (_isDiceUsed)
             {
@@ -85,7 +84,7 @@ public class DiceInfoPanel : MonoBehaviour
             }
             else
             {
-			DataSave.SetString("InfoPanelOpened", "DiceIsUpgrade");
+			PlayerPrefs.SetString("InfoPanelOpened", "DiceIsUpgrade");
                 OpenInfoPanel();
             }
 		} else if (!LockDice.DiceIsUnlocked(diceName))
@@ -96,7 +95,7 @@ public class DiceInfoPanel : MonoBehaviour
             }
             else
             {
-				DataSave.SetString("InfoPanelOpened", "LockedDice");
+				PlayerPrefs.SetString("InfoPanelOpened", "LockedDice");
                 OpenInfoPanel();
             }
         }
@@ -131,7 +130,7 @@ public class DiceInfoPanel : MonoBehaviour
     }
     public void HidePower()
     {
-        GameObject ActiveDice = GameObject.Find(DataSave.GetString("ActiveDice"));
+        GameObject ActiveDice = GameObject.Find(PlayerPrefs.GetString("ActiveDice"));
         for (int i = 1; i <= DicesCount; i++)
         {
             string name = $"DiceField_{i}";
@@ -182,7 +181,7 @@ public class DiceInfoPanel : MonoBehaviour
                 if (transform.GetChild(i).gameObject.name.Substring(0, 5) == "Dice_")
                 {
                     GameObject Dice = transform.GetChild(i).gameObject;
-                    DataSave.SetString("ActiveDice", Dice.name);
+                    PlayerPrefs.SetString("ActiveDice", Dice.name);
                     break;
                 }
                 else

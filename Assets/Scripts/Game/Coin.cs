@@ -38,7 +38,7 @@ public class Coin : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            AddCoins(100);
+            CloudDataManager.Instance.Delete("Coins");
         }
         
         // Принудительное сохранение для тестирования

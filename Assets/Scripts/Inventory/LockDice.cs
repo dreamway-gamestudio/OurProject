@@ -29,7 +29,7 @@ public class LockDice : MonoBehaviour
                     GameObject DiceText = DiceField.transform.GetChild(j).gameObject;
                     string this_name = DiceText.GetComponent<Text>().text;
 
-                    isUnlocked = DataSave.GetInt($"Dice_{this_name}_isUnlocked") == 1 ? true : false;
+                    isUnlocked = PlayerPrefs.GetInt($"Dice_{this_name}_isUnlocked") == 1 ? true : false;
                 }
                 if (DiceField.transform.GetChild(j).name == "BlockImage")
                 {
@@ -52,7 +52,7 @@ public class LockDice : MonoBehaviour
     }
     public static bool DiceIsUnlocked(string diceName)
     {
-        bool isUnlocked = DataSave.GetInt($"Dice_{diceName}_isUnlocked") == 1 ? true : false;
+        bool isUnlocked = PlayerPrefs.GetInt($"Dice_{diceName}_isUnlocked") == 1 ? true : false;
         return isUnlocked;
 
     }

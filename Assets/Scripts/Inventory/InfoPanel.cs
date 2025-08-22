@@ -304,7 +304,7 @@ public class InfoPanel : MonoBehaviour
         if (Coin.Coins >= 500)
         {
             Coin.Coins -= 500;
-            DataSave.SetInt($"Dice_{diceName}_isUnlocked", 1);
+            DataSave.SetIntCritical($"Dice_{diceName}_isUnlocked", 1);
             ClosePanel();
             LockDice.CheckDiceBuyed();
         }
@@ -320,7 +320,7 @@ public class InfoPanel : MonoBehaviour
         if (Diamond.Diamonds >= diamondPrice)
         {
             Diamond.Diamonds -= diamondPrice;
-            DataSave.SetInt($"Dice_{diceName}_isUnlocked", 1);
+            DataSave.SetIntCritical($"Dice_{diceName}_isUnlocked", 1);
             ClosePanel();
             LockDice.CheckDiceBuyed();
         }
