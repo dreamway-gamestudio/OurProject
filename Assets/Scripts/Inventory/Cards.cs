@@ -54,20 +54,20 @@ public class Cards : MonoBehaviour
         giftcards = Random.Range(min, max);
         if (rarity == "standard")
         {
-            PlayerPrefs.SetInt(St_Names[random_dice] + "TotalCards", PlayerPrefs.GetInt(St_Names[random_dice] + "TotalCards") + giftcards);
-            PlayerPrefs.SetInt($"Dice_{St_Names[random_dice]}_isUnlocked", 1);
+            DataSave.SetInt(St_Names[random_dice] + "TotalCards", DataSave.GetInt(St_Names[random_dice] + "TotalCards") + giftcards);
+            DataSave.SetInt($"Dice_{St_Names[random_dice]}_isUnlocked", 1);
             //print($"Dice {St_Names[random_dice]} gets {giftcards} cards");
         }
         else if (rarity == "exclusive")
         {
-            PlayerPrefs.SetInt(Ex_Names[random_dice] + "TotalCards", PlayerPrefs.GetInt(Ex_Names[random_dice] + "TotalCards") + giftcards);
-            //PlayerPrefs.SetInt($"Dice_{Ex_Names[random_dice]}_isUnlocked", 1);
+            DataSave.SetInt(Ex_Names[random_dice] + "TotalCards", DataSave.GetInt(Ex_Names[random_dice] + "TotalCards") + giftcards);
+            //DataSave.SetInt($"Dice_{Ex_Names[random_dice]}_isUnlocked", 1);
             //print($"Dice {Ex_Names[random_dice]} gets {giftcards} cards");
         }
         else if (rarity == "legendary")
         {
-            PlayerPrefs.SetInt(Lg_Names[random_dice] + "TotalCards", PlayerPrefs.GetInt(Lg_Names[random_dice] + "TotalCards") + giftcards);
-            //PlayerPrefs.SetInt($"Dice_{Lg_Names[random_dice]}_isUnlocked", 1);
+            DataSave.SetInt(Lg_Names[random_dice] + "TotalCards", DataSave.GetInt(Lg_Names[random_dice] + "TotalCards") + giftcards);
+            //DataSave.SetInt($"Dice_{Lg_Names[random_dice]}_isUnlocked", 1);
             //print($"Dice {Lg_Names[random_dice]} gets {giftcards} cards");
         }
         LockDice.CheckDiceBuyed();
@@ -98,21 +98,21 @@ public class Cards : MonoBehaviour
         {
             all_standard += standard[i];
         }
-        PlayerPrefs.SetInt("all_standard", all_standard);
+        DataSave.SetInt("all_standard", all_standard);
 
         all_exclusive = 0;
         for (int i = 0; i <= exclusive.Length - 1; i++)
         {
             all_exclusive += exclusive[i];
         }
-        PlayerPrefs.SetInt("all_exclusive", all_exclusive);
+        DataSave.SetInt("all_exclusive", all_exclusive);
 
         all_exclusive = 0;
         for (int i = 0; i <= legendary.Length - 1; i++)
         {
             all_legendary += legendary[i];
         }
-        PlayerPrefs.SetInt("all_legendary", all_legendary);
+        DataSave.SetInt("all_legendary", all_legendary);
     }
     public void CardsInit()
     {
@@ -138,7 +138,7 @@ public class Cards : MonoBehaviour
                         {
                             GameObject ClassText = PowerInfo.transform.GetChild(k).gameObject; // *mtanq ClassText
 
-                            ClassText.GetComponent<Text>().text = "Class " + PlayerPrefs.GetInt(diceName + "Class");
+                            ClassText.GetComponent<Text>().text = "Class " + DataSave.GetInt(diceName + "Class");
 
                         }
                         if (PowerInfo.transform.GetChild(k).name == "CardBar")
@@ -160,18 +160,18 @@ public class Cards : MonoBehaviour
                                 if (CardBar.transform.GetChild(m).name == "CardsText")
                                 {
                                     GameObject CardsText = CardBar.transform.GetChild(m).gameObject;
-                                    int totalCards = PlayerPrefs.GetInt(diceName + "TotalCards");
+                                    int totalCards = DataSave.GetInt(diceName + "TotalCards");
 
-                                    int thisClass = PlayerPrefs.GetInt(diceName + "Class");
+                                    int thisClass = DataSave.GetInt(diceName + "Class");
                                     if (thisClass > 0 && thisClass < 15)
                                     {
-                                        if (PlayerPrefs.GetString(diceName + "Rarity") == "Standard")
+                                        if (DataSave.GetString(diceName + "Rarity") == "Standard")
                                         {
                                             CardsText.GetComponent<Text>().text = $"{totalCards.ToString()}/{standard[thisClass - 1]}";
                                             float percent = (float)totalCards / (float)standard[thisClass - 1];
                                             //CardBar.GetComponent<Scrollbar>().size = percent;
                                             Handle.GetComponent<Image>().fillAmount = percent;
-                                            if (Class.DiceIsUpgrade(diceName, PlayerPrefs.GetString(diceName + "Rarity")))
+                                            if (Class.DiceIsUpgrade(diceName, DataSave.GetString(diceName + "Rarity")))
                                             {
                                                 //ChangeHandleColor("#65FF3D", Handle);
                                                 Handle.GetComponent<Image>().sprite = HandleDone;
@@ -182,13 +182,13 @@ public class Cards : MonoBehaviour
                                                 Handle.GetComponent<Image>().sprite = HandleLoading;
                                             }
                                         }
-                                        else if (PlayerPrefs.GetString(diceName + "Rarity") == "Exclusive")
+                                        else if (DataSave.GetString(diceName + "Rarity") == "Exclusive")
                                         {
                                             CardsText.GetComponent<Text>().text = $"{totalCards.ToString()}/{exclusive[thisClass - 3]}";
                                             float percent = (float)totalCards / (float)exclusive[thisClass - 3];
                                             //CardBar.GetComponent<Scrollbar>().size = percent;
                                             Handle.GetComponent<Image>().fillAmount = percent;
-                                            if (Class.DiceIsUpgrade(diceName, PlayerPrefs.GetString(diceName + "Rarity")))
+                                            if (Class.DiceIsUpgrade(diceName, DataSave.GetString(diceName + "Rarity")))
                                             {
                                                 //ChangeHandleColor("#65FF3D", Handle);
                                                 Handle.GetComponent<Image>().sprite = HandleDone;
@@ -199,13 +199,13 @@ public class Cards : MonoBehaviour
                                                 Handle.GetComponent<Image>().sprite = HandleLoading;
                                             }
                                         }
-                                        else if (PlayerPrefs.GetString(diceName + "Rarity") == "Legendary")
+                                        else if (DataSave.GetString(diceName + "Rarity") == "Legendary")
                                         {
                                             CardsText.GetComponent<Text>().text = $"{totalCards.ToString()}/{legendary[thisClass - 5]}";
                                             float percent = (float)totalCards / (float)legendary[thisClass - 5];
                                             //CardBar.GetComponent<Scrollbar>().size = percent;
                                             Handle.GetComponent<Image>().fillAmount = percent;
-                                            if (Class.DiceIsUpgrade(diceName, PlayerPrefs.GetString(diceName + "Rarity")))
+                                            if (Class.DiceIsUpgrade(diceName, DataSave.GetString(diceName + "Rarity")))
                                             {
                                                 //ChangeHandleColor("#65FF3D", Handle);
                                                 Handle.GetComponent<Image>().sprite = HandleDone;
@@ -227,9 +227,9 @@ public class Cards : MonoBehaviour
                                 if (CardBar.transform.GetChild(m).name == "UpgradeArrow")
                                 {
                                     UpgradeArrow = CardBar.transform.GetChild(m).gameObject;
-                                    if (PlayerPrefs.GetString(diceName + "Rarity") == "Standard")
+                                    if (DataSave.GetString(diceName + "Rarity") == "Standard")
                                     {
-                                        if (Class.DiceIsUpgrade(diceName, PlayerPrefs.GetString(diceName + "Rarity")))
+                                        if (Class.DiceIsUpgrade(diceName, DataSave.GetString(diceName + "Rarity")))
                                         {
                                             UpgradeArrow.GetComponent<Image>().enabled = true;
                                         }
@@ -238,9 +238,9 @@ public class Cards : MonoBehaviour
                                             UpgradeArrow.GetComponent<Image>().enabled = false;
                                         }
                                     }
-                                    else if (PlayerPrefs.GetString(diceName + "Rarity") == "Exclusive")
+                                    else if (DataSave.GetString(diceName + "Rarity") == "Exclusive")
                                     {
-                                        if (Class.DiceIsUpgrade(diceName, PlayerPrefs.GetString(diceName + "Rarity")))
+                                        if (Class.DiceIsUpgrade(diceName, DataSave.GetString(diceName + "Rarity")))
                                         {
                                             UpgradeArrow.GetComponent<Image>().enabled = true;
                                         }
@@ -249,9 +249,9 @@ public class Cards : MonoBehaviour
                                             UpgradeArrow.GetComponent<Image>().enabled = false;
                                         }
                                     }
-                                    else if (PlayerPrefs.GetString(diceName + "Rarity") == "Legendary")
+                                    else if (DataSave.GetString(diceName + "Rarity") == "Legendary")
                                     {
-                                        if (Class.DiceIsUpgrade(diceName, PlayerPrefs.GetString(diceName + "Rarity")))
+                                        if (Class.DiceIsUpgrade(diceName, DataSave.GetString(diceName + "Rarity")))
                                         {
                                             UpgradeArrow.GetComponent<Image>().enabled = true;
                                         }

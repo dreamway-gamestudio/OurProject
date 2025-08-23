@@ -20,7 +20,7 @@ public class DiceInfoPanel : MonoBehaviour
     GameObject Finding_GameObject;
     void Start()
     {
-        PlayerPrefs.SetInt("upgradforinfo", 1);
+        DataSave.SetInt("upgradforinfo", 1);
         InfoPanel = GameObject.FindObjectOfType<InfoPanel>();
         Inventory = GameObject.FindObjectOfType<Inventory>();
         string[] splitArray = DrageblleDice.name.Split(char.Parse("_"));
@@ -63,44 +63,76 @@ public class DiceInfoPanel : MonoBehaviour
 
 
     }
-    public void ChooseDice()
+    // --- добавь в класс (хелперы) ---
+Button GetUseButton()
+{
+    if (Buttons == null) return null;
+    var b = Buttons.transform.Find("UseButton")?.GetComponent<Button>();
+    if (b == null && Buttons.transform.childCount > 1)
+        b = Buttons.transform.GetChild(1).GetComponent<Button>(); // fallback
+    return b;
+}
+Button GetInfoButton()
+{
+    if (Buttons == null) return null;
+    var b = Buttons.transform.Find("InfoButton")?.GetComponent<Button>();
+    if (b == null && Buttons.transform.childCount > 0)
+        b = Buttons.transform.GetChild(0).GetComponent<Button>(); // fallback
+    return b;
+}
+bool IsInInventorySlot()
+{
+    var p = DrageblleDice?.transform?.parent?.name;
+    return !string.IsNullOrEmpty(p) && p.StartsWith("Item"); // стоит в инвентаре
+}
+
+// --- замени метод ---
+public void ChooseDice()
+{
+    DataSave.SetString("InfoPanelOpened", "DiceOriginal");
+
+    bool isUnlocked    = LockDice.DiceIsUnlocked(diceName);
+    bool inInventory   = IsInInventorySlot(); // <-- ключевая проверка
+
+    if (isUnlocked && inInventory)
     {
+        // УЖЕ В ИНВЕНТАРЕ: показываем ТОЛЬКО Info, Use выключаем
+        BlackImages(false);
+        HidePower();
+        if (PowerInfo) PowerInfo.SetActive(false);
+        if (Buttons)   Buttons.SetActive(true);
 
-		PlayerPrefs.SetString("InfoPanelOpened", "DiceOriginal");
-		if (LockDice.DiceIsUnlocked(diceName) && !Class.DiceIsUpgrade(diceName, PlayerPrefs.GetString(diceName + "Rarity", "")))
-        {
-            BlackImages(false);
-            HidePower();
-            PowerInfo.SetActive(false);
-            Buttons.SetActive(true);
-            _isDiceUsed = false;
-            InfoButton_Interactible(true);
-        }
-        else if (Class.DiceIsUpgrade(diceName, PlayerPrefs.GetString(diceName + "Rarity")) && LockDice.DiceIsUnlocked(diceName))
-        {
-            if (_isDiceUsed)
-            {
-                Inventory.HideButtons_DIP();
-            }
-            else
-            {
-			PlayerPrefs.SetString("InfoPanelOpened", "DiceIsUpgrade");
-                OpenInfoPanel();
-            }
-		} else if (!LockDice.DiceIsUnlocked(diceName))
-        {
-            if (_isDiceUsed)
-            {
-                Inventory.HideButtons_DIP();
-            }
-            else
-            {
-				PlayerPrefs.SetString("InfoPanelOpened", "LockedDice");
-                OpenInfoPanel();
-            }
-        }
+        var useBtn  = GetUseButton();
+        var infoBtn = GetInfoButton();
+        if (useBtn)  useBtn.interactable  = false;
+        if (infoBtn) infoBtn.interactable = true;
 
+        OpenInfoPanel(); // можно убрать, если нужно только кнопки без панели
+        return;
     }
+
+    // остальная логика как раньше
+    if (isUnlocked && !Class.DiceIsUpgrade(diceName, DataSave.GetString(diceName + "Rarity", "")))
+    {
+        BlackImages(false);
+        HidePower();
+        if (PowerInfo) PowerInfo.SetActive(false);
+        if (Buttons)   Buttons.SetActive(true);
+        _isDiceUsed = false; // больше не опираемся на него для "выбран"
+        InfoButton_Interactible(true);
+    }
+    else if (Class.DiceIsUpgrade(diceName, DataSave.GetString(diceName + "Rarity")) && isUnlocked)
+    {
+        DataSave.SetString("InfoPanelOpened", "DiceIsUpgrade");
+        OpenInfoPanel();
+    }
+    else if (!isUnlocked)
+    {
+        DataSave.SetString("InfoPanelOpened", "LockedDice");
+        OpenInfoPanel();
+    }
+}
+
     void OpenInfoPanel()
     {
 
@@ -130,7 +162,7 @@ public class DiceInfoPanel : MonoBehaviour
     }
     public void HidePower()
     {
-        GameObject ActiveDice = GameObject.Find(PlayerPrefs.GetString("ActiveDice"));
+        GameObject ActiveDice = GameObject.Find(DataSave.GetString("ActiveDice"));
         for (int i = 1; i <= DicesCount; i++)
         {
             string name = $"DiceField_{i}";
@@ -181,7 +213,7 @@ public class DiceInfoPanel : MonoBehaviour
                 if (transform.GetChild(i).gameObject.name.Substring(0, 5) == "Dice_")
                 {
                     GameObject Dice = transform.GetChild(i).gameObject;
-                    PlayerPrefs.SetString("ActiveDice", Dice.name);
+                    DataSave.SetString("ActiveDice", Dice.name);
                     break;
                 }
                 else

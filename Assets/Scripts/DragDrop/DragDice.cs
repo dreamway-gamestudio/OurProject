@@ -55,7 +55,7 @@ public class DragDice : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         if (gameObject.transform.parent.name.Substring(0, 4) == "Item" && !_isUsed)
         {
 
-            GameObject DiceParent = GameObject.Find(PlayerPrefs.GetString($"{gameObject.name}_pos"));
+            GameObject DiceParent = GameObject.Find(DataSave.GetString($"{gameObject.name}_pos"));
             for (int i = 0; i <= DiceParent.transform.childCount - 1; i++)
             {
                 if (DiceParent.transform.GetChild(i).name == "Buttons")
@@ -114,7 +114,7 @@ public class DragDice : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
         if (Vector2.Distance(transform.localPosition, _currentPosition) > 0.1f)
         {
-            transform.Translate((_currentPosition - transform.localPosition) * 0.025f);
+            transform.Translate((_currentPosition - transform.localPosition) * 0.25f);
         }
         else
         {
