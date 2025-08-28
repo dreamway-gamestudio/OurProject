@@ -25,7 +25,7 @@ public class DragSlot : MonoBehaviour, IDropHandler
     {
         try
         {
-            GameObject ActiveDice = GameObject.Find(PlayerPrefs.GetString("ActiveDice"));
+            GameObject ActiveDice = GameObject.Find(DataSave.GetString("ActiveDice"));
             //print("_isDrag " + DragDice._isDrag);
             //print("_returning " + ActiveDice.GetComponent<DragDice>()._returning);
             if (!DragDice._isDrag && !ActiveDice.GetComponent<DragDice>()._returning)
@@ -33,16 +33,16 @@ public class DragSlot : MonoBehaviour, IDropHandler
                 if (DiceInfoPanel._isDiceUsed)
                 {
                     _onDrop = true;
-                    GameObject DiceInfo = GameObject.Find(PlayerPrefs.GetString($"{ActiveDice.gameObject.name}_pos"));
+                    GameObject DiceInfo = GameObject.Find(DataSave.GetString($"{ActiveDice.gameObject.name}_pos"));
                     DiceInfo.GetComponent<DiceInfoPanel>().HideButtons();
                     ActiveDice.transform.SetParent(transform);
                     ActiveDice.transform.localPosition = Vector3.zero;
 
 
-                    PlayerPrefs.SetString($"Dice{gameObject.name[4]}", ActiveDice.gameObject.name);
+                    DataSave.SetString($"Dice{gameObject.name[4]}", ActiveDice.gameObject.name);
                     Rakirovka();
                     DiceInfoPanel._isDiceUsed = false;
-                    PlayerPrefs.SetString("ActiveDice","null");
+                    DataSave.SetString("ActiveDice","null");
                 }
                 else if (!DiceInfoPanel._isDiceUsed)
                 {
@@ -58,8 +58,8 @@ public class DragSlot : MonoBehaviour, IDropHandler
     }
     void OpenInfoPanel()
     {
-		PlayerPrefs.SetString("InfoPanelOpened", "DragSlot");
-		ParentName = PlayerPrefs.GetString(transform.GetChild(0).name + "_pos", "");
+		DataSave.SetString("InfoPanelOpened", "DragSlot");
+		ParentName = DataSave.GetString(transform.GetChild(0).name + "_pos", "");
         InfoPanel.OpenPanel();
     }
     public void OnDrop(PointerEventData eventData)
@@ -73,14 +73,14 @@ public class DragSlot : MonoBehaviour, IDropHandler
         {
             try
             {
-                GameObject DiceInfo = GameObject.Find(PlayerPrefs.GetString($"{eventData.pointerDrag.transform.gameObject.name}_pos"));
+                GameObject DiceInfo = GameObject.Find(DataSave.GetString($"{eventData.pointerDrag.transform.gameObject.name}_pos"));
                 DiceInfo.GetComponent<DiceInfoPanel>().HideButtons();
                 //eventData.pointerDrag.transform.gameObject.GetComponent<DiceInfoPanel>();
                 eventData.pointerDrag.GetComponent<RectTransform>().sizeDelta = new Vector2(200f, 200f);
                 eventData.pointerDrag.transform.GetChild(0).GetComponent<RectTransform>().localPosition = new Vector2(0f, -30f);
                 eventData.pointerDrag.transform.GetChild(0).GetComponent<RectTransform>().sizeDelta = new Vector2(20f, 20f);
                 eventData.pointerDrag.transform.GetChild(0).GetComponent<Image>().enabled = true;
-                PlayerPrefs.SetString($"Dice{gameObject.name[4]}", eventData.pointerDrag.transform.gameObject.name);
+                DataSave.SetString($"Dice{gameObject.name[4]}", eventData.pointerDrag.transform.gameObject.name);
                 var otherDiceTransform = eventData.pointerDrag.transform;
                 otherDiceTransform.transform.gameObject.GetComponent<RectTransform>().localScale = new Vector3(1f, 1f, 1f);
                 otherDiceTransform.SetParent(transform);
@@ -97,7 +97,7 @@ public class DragSlot : MonoBehaviour, IDropHandler
 
     void Rakirovka()
     {
-        string parentFind = PlayerPrefs.GetString($"{transform.GetChild(0).name}_pos");
+        string parentFind = DataSave.GetString($"{transform.GetChild(0).name}_pos");
         DiceForDrag = GameObject.Find(parentFind);
         GameObject DiceReposition = transform.GetChild(0).gameObject;
         /*   Nor dice   */
@@ -112,7 +112,7 @@ public class DragSlot : MonoBehaviour, IDropHandler
 
         /*   Het gnacox dice   */
 
-        GameObject DiceParent = GameObject.Find(PlayerPrefs.GetString($"{DiceReposition.name}_pos"));
+        GameObject DiceParent = GameObject.Find(DataSave.GetString($"{DiceReposition.name}_pos"));
         for (int i = 0; i <= DiceParent.transform.childCount - 1; i++)
         {
             if (DiceParent.transform.GetChild(i).name == "Buttons")

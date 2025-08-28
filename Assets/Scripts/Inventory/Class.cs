@@ -49,8 +49,8 @@ public class Class : MonoBehaviour
             { // diceName, rarity
                 if (DiceIsUpgrade(DiceName, RarityName)) // ստուգում թե կարա՞ հզորացնի, ստուգումա կլասը ու քարտերի քանակը վերադարձնումա bool
                 {
-                    PlayerPrefs.SetInt(DiceName + "TotalCards", PlayerPrefs.GetInt(DiceName + "TotalCards") - Cards.standard[PlayerPrefs.GetInt(DiceName + "Class") - 1]); // պահանջվող քարտերը հանումա
-                    PlayerPrefs.SetInt(DiceName + "Class", PlayerPrefs.GetInt(DiceName + "Class") + 1); // Class 1-ով ավելացնումա
+                    DataSave.SetInt(DiceName + "TotalCards", DataSave.GetInt(DiceName + "TotalCards") - Cards.standard[DataSave.GetInt(DiceName + "Class") - 1]); // պահանջվող քարտերը հանումա
+                    DataSave.SetInt(DiceName + "Class", DataSave.GetInt(DiceName + "Class") + 1); // Class 1-ով ավելացնումա
                     DicePlayerPrefs.UpgradeDice(DiceName);
                     InfoPanelCode.UpdateDiceInfoPanelTextes();
                 }
@@ -59,8 +59,8 @@ public class Class : MonoBehaviour
             {
                 if (DiceIsUpgrade(DiceName, RarityName))
                 {
-                    PlayerPrefs.SetInt(DiceName + "TotalCards", PlayerPrefs.GetInt(DiceName + "TotalCards") - Cards.exclusive[PlayerPrefs.GetInt(DiceName + "Class") - 3]);
-                    PlayerPrefs.SetInt(DiceName + "Class", PlayerPrefs.GetInt(DiceName + "Class") + 1);
+                    DataSave.SetInt(DiceName + "TotalCards", DataSave.GetInt(DiceName + "TotalCards") - Cards.exclusive[DataSave.GetInt(DiceName + "Class") - 3]);
+                    DataSave.SetInt(DiceName + "Class", DataSave.GetInt(DiceName + "Class") + 1);
                     DicePlayerPrefs.UpgradeDice(DiceName);
                     InfoPanelCode.UpdateDiceInfoPanelTextes();
                 }
@@ -69,23 +69,22 @@ public class Class : MonoBehaviour
             {
                 if (DiceIsUpgrade(DiceName, RarityName))
                 {
-                    PlayerPrefs.SetInt(DiceName + "TotalCards", PlayerPrefs.GetInt(DiceName + "TotalCards") - Cards.legendary[PlayerPrefs.GetInt(DiceName + "Class") - 5]);
-                    PlayerPrefs.SetInt(DiceName + "Class", PlayerPrefs.GetInt(DiceName + "Class") + 1);
+                    DataSave.SetInt(DiceName + "TotalCards", DataSave.GetInt(DiceName + "TotalCards") - Cards.legendary[DataSave.GetInt(DiceName + "Class") - 5]);
+                    DataSave.SetInt(DiceName + "Class", DataSave.GetInt(DiceName + "Class") + 1);
                     DicePlayerPrefs.UpgradeDice(DiceName);
                     InfoPanelCode.UpdateDiceInfoPanelTextes();
                 }
             }
             Cards.CardsInit();
-            //DicePlayerPrefs.InitDiceInfo();
-            if (PlayerPrefs.GetInt(DiceName + "Class") > 14)
+            if (DataSave.GetInt(DiceName + "Class") > 14)
             {
                 FindFromInfoPanel("DiceClass_Text").GetComponent<Text>().text = "MAX"; // maxtext
             }
             else
             {
-                FindFromInfoPanel("DiceClass_Text").GetComponent<Text>().text = "Class " + PlayerPrefs.GetInt(DiceName + "Class");
+                FindFromInfoPanel("DiceClass_Text").GetComponent<Text>().text = "Class " + DataSave.GetInt(DiceName + "Class");
             }
-            //FindFromInfoPanel("DiceClass_Text").GetComponent<Text>().text = "Class " + PlayerPrefs.GetInt(DiceName + "Class");
+            //FindFromInfoPanel("DiceClass_Text").GetComponent<Text>().text = "Class " + DataSave.GetInt(DiceName + "Class");
             InfoPanelCode.UpgradeButtonCheck();
         }
     }
@@ -94,21 +93,21 @@ public class Class : MonoBehaviour
         bool isUpgrade = false;
         if (rarity == "Standard")
         {
-            if (PlayerPrefs.GetInt(diceName + "Class") < 15 && PlayerPrefs.GetInt(diceName + "TotalCards") >= Cards.standard[PlayerPrefs.GetInt(diceName + "Class") - 1])
+            if (DataSave.GetInt(diceName + "Class") < 15 && DataSave.GetInt(diceName + "TotalCards") >= Cards.standard[DataSave.GetInt(diceName + "Class") - 1])
             {
                 isUpgrade = true;
             }
         }
         else if (rarity == "Exclusive")
         {
-            if (PlayerPrefs.GetInt(diceName + "Class") < 15 && PlayerPrefs.GetInt(diceName + "TotalCards") >= Cards.exclusive[PlayerPrefs.GetInt(diceName + "Class") - 3])
+            if (DataSave.GetInt(diceName + "Class") < 15 && DataSave.GetInt(diceName + "TotalCards") >= Cards.exclusive[DataSave.GetInt(diceName + "Class") - 3])
             {
                 isUpgrade = true;
             }
         }
         else if (rarity == "Legendary")
         {
-            if (PlayerPrefs.GetInt(diceName + "Class") < 15 && PlayerPrefs.GetInt(diceName + "TotalCards") >= Cards.legendary[PlayerPrefs.GetInt(diceName + "Class") - 5])
+            if (DataSave.GetInt(diceName + "Class") < 15 && DataSave.GetInt(diceName + "TotalCards") >= Cards.legendary[DataSave.GetInt(diceName + "Class") - 5])
             {
                 isUpgrade = true;
             }

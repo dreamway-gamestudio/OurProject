@@ -34,13 +34,13 @@ public class Inventory : MonoBehaviour
                     string diceName = Item.transform.GetChild(0).name;
                     string[] splitArray = diceName.Split(char.Parse("_"));
 
-                    if (PlayerPrefs.GetInt(splitArray[1] + "Class") > 14)
+                    if (DataSave.GetInt(splitArray[1] + "Class") > 14)
                     {
                         ClassText.GetComponent<Text>().text = "MAX"; //maxtext
                     }
                     else
                     {
-                        ClassText.GetComponent<Text>().text = "Class " + PlayerPrefs.GetInt(splitArray[1] + "Class");
+                        ClassText.GetComponent<Text>().text = "Class " + DataSave.GetInt(splitArray[1] + "Class");
                     }
                 }
             }
@@ -76,12 +76,12 @@ public class Inventory : MonoBehaviour
     }
     public void OnlyOneTime() // mi angam skzbum ashxatox funkcia
     {
-        InIt = PlayerPrefs.GetInt("InIt") == 1 ? true : false;
+        InIt = DataSave.GetInt("InIt") == 1 ? true : false;
         if (!InIt)
         {
             Elixir.SetElixir(5); // poxel
-            PlayerPrefs.SetInt("Coins", 0);
-            PlayerPrefs.SetInt("Diamonds", 0);
+            DataSave.SetInt("Coins", 0);
+            DataSave.SetInt("Diamonds", 0);
             for (int j = 1; j <= totalDices; j++) // sa diceri parentnerin pahpanelu hamara, vor heto karenanq dragi vaxt het qcenq ira texy
             {
                 string name = $"DiceField_{j}"; // dice i parenti anunna, vory kpoxvi amen cikli jamanak (1...5)
@@ -94,7 +94,7 @@ public class Inventory : MonoBehaviour
                         if (DiceField.transform.GetChild(k).name.Substring(0, 5) == "Dice_")
                         {
                             this_Dice = DiceField.transform.GetChild(k).gameObject;
-                            PlayerPrefs.SetString($"{this_Dice.name}_pos", this_Dice.transform.parent.name);
+                            DataSave.SetString($"{this_Dice.name}_pos", this_Dice.transform.parent.name);
                             //print(this_Dice.name);
                         }
                     }
@@ -120,15 +120,15 @@ public class Inventory : MonoBehaviour
                         if (DiceField.transform.GetChild(k).name.Substring(0, 5) == "Dice_")
                         {
                             this_Dice = DiceField.transform.GetChild(k).gameObject;
-                            PlayerPrefs.SetString($"{this_Dice.name}_pos", this_Dice.transform.parent.name);
+                            DataSave.SetString($"{this_Dice.name}_pos", this_Dice.transform.parent.name);
                             //print(this_Dice.name);
                         }
                     }
                     catch { }
                 }
                 GameObject this_Item = GameObject.Find(firstParents); // gtnuma hamapatasxan item verevi anunov vor hamapatasxan dicy texavori sra mej
-                PlayerPrefs.SetString($"Dice{i}", this_Dice.name);
-                //PlayerPrefs.SetString($"Dice{i}_pos", this_Dice.transform.parent.name);
+                DataSave.SetString($"Dice{i}", this_Dice.name);
+                //DataSave.SetString($"Dice{i}_pos", this_Dice.transform.parent.name);
                 this_Dice.transform.SetParent(this_Item.transform); // dicy texavoruma itemi mej
                 this_Dice.transform.GetComponent<Image>().raycastTarget = false; // vor sa chem grum verevum irar mej karum es poxes
                 this_Dice.transform.localPosition = Vector3.zero; // dicy dirqy zroyacnuma ira parenti dirqin` voncor reset
@@ -146,12 +146,12 @@ public class Inventory : MonoBehaviour
                         string this_name = DiceText.GetComponent<Text>().text;
                         if (m > 0 && m < 6)
                         {
-                            PlayerPrefs.SetInt($"Dice_{this_name}_isUnlocked", 1);
+                            DataSave.SetInt($"Dice_{this_name}_isUnlocked", 1);
                         }
                         else if (m > 5)
                         {
 
-                            PlayerPrefs.SetInt($"Dice_{this_name}_isUnlocked", 0);
+                            DataSave.SetInt($"Dice_{this_name}_isUnlocked", 0);
                         }
                     }
                 }
@@ -162,7 +162,7 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 1; i <= 5; i++)
         {
-            string diceName = PlayerPrefs.GetString($"Dice{i}"); // "Dice_Black" naprimer
+            string diceName = DataSave.GetString($"Dice{i}"); // "Dice_Black" naprimer
             GameObject Dice = GameObject.Find(diceName);
             Dice.GetComponent<Image>().enabled = true;
             Dice.transform.SetParent(GameObject.Find($"Item{i}").transform);
@@ -172,7 +172,7 @@ public class Inventory : MonoBehaviour
             Dice.transform.GetChild(0).GetComponent<RectTransform>().localPosition = new Vector2(0f, -30f);
             Dice.transform.GetChild(0).GetComponent<RectTransform>().sizeDelta = new Vector2(20f, 20f);
             InIt = true;
-            PlayerPrefs.SetInt("InIt", (InIt ? 1 : 0));
+            DataSave.SetInt("InIt", (InIt ? 1 : 0));
         }
 
     }

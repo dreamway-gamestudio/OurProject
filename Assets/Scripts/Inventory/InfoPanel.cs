@@ -7,332 +7,374 @@ using UnityEngine.EventSystems;
 public class InfoPanel : MonoBehaviour
 {
     public GameObject Info_Panel;
-    GameObject Finding_GameObject;
-    Image DiceImage;
 
-    DicePlayerPrefs DicePlayerPrefs;
     Inventory Inventory;
     LockDice LockDice;
     Class Class;
-    string diceName;
-    GameObject Count;
     Cards Cards;
+
     GameObject DiceField;
+    string diceName;
     int diamondPrice;
-    // Start is called before the first frame update
+
     void Start()
     {
-        Info_Panel.SetActive(false);
-        Inventory = GameObject.FindObjectOfType<Inventory>();
-        Cards = GameObject.FindObjectOfType<Cards>();
-        LockDice = GameObject.FindObjectOfType<LockDice>();
-        Class = GameObject.FindObjectOfType<Class>();
-        //DicePlayerPrefs = GameObject.FindObjectOfType<DicePlayerPrefs>();
+        Info_Panel = Info_Panel ?? gameObject; // на всякий
+        if (Info_Panel != null) Info_Panel.SetActive(false);
+
+        Inventory = FindObjectOfType<Inventory>();
+        Cards     = FindObjectOfType<Cards>();
+        LockDice  = FindObjectOfType<LockDice>();
+        Class     = FindObjectOfType<Class>();
     }
+
     void Update()
     {
-        if (Class._isUpgarded)
+        if (Class != null && Class._isUpgarded)
         {
             UpdateCardBarInfo();
             Class._isUpgarded = false;
         }
     }
 
-    public GameObject GetFromInfoPanel(string findingName)
+    // ---------- SAFE HELPERS ----------
+    GameObject FindChild(Transform root, string name)
     {
-        for (int i = 0; i <= transform.GetChild(0).transform.GetChild(0).childCount - 1; i++)
+        if (root == null) return null;
+        for (int i = 0; i < root.childCount; i++)
         {
-            if (transform.GetChild(0).transform.GetChild(0).GetChild(i).name == findingName)
-            {
-                Finding_GameObject = transform.GetChild(0).transform.GetChild(0).GetChild(i).gameObject;
-                break;
-            }
+            var ch = root.GetChild(i);
+            if (ch.name == name) return ch.gameObject;
         }
-        return Finding_GameObject;
+        return null;
     }
 
+    // И немного усилим поиск внутри самого InfoPanel (если хочешь):
+public GameObject GetFromInfoPanel(string findingName)
+{
+    var root = transform.GetChild(0).GetChild(0); // обычно Content
+    var t = FindDescendantByName(root, findingName);
+    if (t == null)
+        Debug.LogError($"[InfoPanel] '{findingName}' not found under '{root.name}'. Children: {DumpChildren(root, 2)}");
+    return t?.gameObject;
+}
+// Рекурсивный поиск потомка по имени (ищет на любую глубину)
+Transform FindDescendantByName(Transform root, string name)
+{
+    if (root == null) return null;
+    if (root.name == name) return root;
+    for (int i = 0; i < root.childCount; i++)
+    {
+        var res = FindDescendantByName(root.GetChild(i), name);
+        if (res != null) return res;
+    }
+    return null;
+}
+
+// Поиск ближайшего предка, имя которого начинается с префикса
+Transform FindAncestorWithPrefix(Transform t, string prefix)
+{
+    while (t != null && !t.name.StartsWith(prefix)) t = t.parent;
+    return t;
+}
+
+// Для отладки: выводит имена детей до depth уровней
+string DumpChildren(Transform root, int depth)
+{
+    if (root == null) return "<null>";
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    void Recur(Transform x, int d)
+    {
+        if (x == null || d < 0) return;
+        sb.Append(x.name);
+        if (d >= 0) sb.Append(" { ");
+        for (int i = 0; i < x.childCount; i++)
+        {
+            Recur(x.GetChild(i), d - 1);
+            if (i < x.childCount - 1) sb.Append(", ");
+        }
+        if (d >= 0) sb.Append(" }");
+    }
+    Recur(root, depth);
+    return sb.ToString();
+}
+    GameObject ResolveDiceField()
+{
+    var opened  = DataSave.GetString("InfoPanelOpened", "");
+    var current = UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject;
+
+    if (opened == "DragSlot")
+    {
+        var go = GameObject.Find(DragSlot.ParentName);
+        Debug.Log($"[InfoPanel] Resolve DiceField by DragSlot: {go?.name}");
+        return go;
+    }
+
+    // Надёжно: поднимаемся к предку "DiceField_*"
+    var holder = FindAncestorWithPrefix(current?.transform, "DiceField_");
+    if (holder == null)
+    {
+        Debug.LogWarning($"[InfoPanel] DiceField ancestor not found from '{current?.name ?? "null"}'. Fallback to parent.");
+        holder = current?.transform?.parent;
+    }
+    Debug.Log($"[InfoPanel] Resolved DiceField: {holder?.name ?? "null"}");
+    return holder?.gameObject;
+}
 
     public GameObject GetFromDiceField(string findingName)
+{
+    if (DiceField == null) DiceField = ResolveDiceField();
+    var t = FindDescendantByName(DiceField?.transform, findingName);
+    if (t == null)
     {
-        if (PlayerPrefs.GetString("InfoPanelOpened") == "DiceOriginal")
-        {
-            //print("original");
-            DiceField = EventSystem.current.currentSelectedGameObject.transform.parent.parent.gameObject;
-            //print(DiceField.name);
-            for (int i = 0; i <= DiceField.transform.childCount - 1; i++)
-            {
-                if (DiceField.transform.GetChild(i).name == findingName)
-                {
-                    Finding_GameObject = DiceField.transform.GetChild(i).gameObject;
-                    break;
-                }
-            }
-        }
-        else if (PlayerPrefs.GetString("InfoPanelOpened") == "DragSlot")
-        {
-            DiceField = GameObject.Find(DragSlot.ParentName);
-            //print(DiceField.name);
-            for (int i = 0; i <= DiceField.transform.childCount - 1; i++)
-            {
-                if (DiceField.transform.GetChild(i).name == findingName)
-                {
-                    Finding_GameObject = DiceField.transform.GetChild(i).gameObject;
-                    break;
-                }
-            }
-        }
-        else if (PlayerPrefs.GetString("InfoPanelOpened") == "LockedDice" || PlayerPrefs.GetString("InfoPanelOpened") == "DiceIsUpgrade")
-        {
-            // print("locked");
-            DiceField = EventSystem.current.currentSelectedGameObject.transform.parent.gameObject;
-            //print(DiceField.name);
-            for (int i = 0; i <= DiceField.transform.childCount - 1; i++)
-            {
-                if (DiceField.transform.GetChild(i).name == findingName)
-                {
-                    Finding_GameObject = DiceField.transform.GetChild(i).gameObject;
-                    break;
-                }
-            }
-        }
-        else
-        {
-            //print("InfoPanel Error");
-        }
-
-        return Finding_GameObject;
-
+        Debug.LogError($"[InfoPanel] '{findingName}' not found under '{DiceField?.name ?? "null"}'. Children: {DumpChildren(DiceField?.transform, 2)}");
+        return null;
     }
-    public GameObject GetFromCurrentDiceField(string findingName)
+    return t.gameObject;
+}
+
+public GameObject GetFromCurrentDiceField(string findingName)
+{
+    var t = FindDescendantByName(DiceField?.transform, findingName);
+    if (t == null)
+        Debug.LogError($"[InfoPanel] '{findingName}' not found under current '{DiceField?.name ?? "null"}'. Children: {DumpChildren(DiceField?.transform, 2)}");
+    return t?.gameObject;
+}
+
+    GameObject GetSlotChild(string slotName) // вернуть дочерний "Count" внутри слота
     {
-        for (int i = 0; i <= DiceField.transform.childCount - 1; i++)
-        {
-            if (DiceField.transform.GetChild(i).name == findingName)
-            {
-                Finding_GameObject = DiceField.transform.GetChild(i).gameObject;
-                break;
-            }
-        }
-        return Finding_GameObject;
-    }
-    public GameObject GetSlotChild(string SlotName)
-    {
-        GameObject CountSlot = GetFromInfoPanel(SlotName).gameObject;
-        for (int i = 0; i <= CountSlot.transform.childCount - 1; i++)
-        {
-            if (CountSlot.transform.GetChild(i).name == "Count")
-            {
-                Count = CountSlot.transform.GetChild(i).gameObject;
-                break;
-            }
-        }
-        return Count;
+        var slot = GetFromInfoPanel(slotName);
+        if (slot == null) return null;
+        var count = FindChild(slot.transform, "Count");
+        if (count == null) Debug.LogError($"[InfoPanel] 'Count' not found in slot '{slotName}'");
+        return count;
     }
 
     void ResizeCardBar(GameObject CardBar) // popoxel clone exac cardbari chapery
     {
-        CardBar.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1); // cardbari scale
-        CardBar.GetComponent<RectTransform>().sizeDelta = new Vector2(230, 50); // cardbari chapery x,y
-        CardBar.GetComponent<RectTransform>().anchoredPosition = new Vector2(-265, 145); // cardbari position
-        CardBar.transform.GetChild(1).GetComponent<Text>().fontSize = 37; // CardsText i fonti chaper
-        CardBar.transform.GetChild(2).GetComponent<RectTransform>().sizeDelta = new Vector2(60, 70); // UpgradeArrow i chapery x,y
-        CardBar.transform.GetChild(2).GetComponent<RectTransform>().anchoredPosition = new Vector2(-100, 3); // UpgradeArrow i position
+        if (CardBar == null) return;
+        var rt = CardBar.GetComponent<RectTransform>();
+        if (rt == null) return;
+        rt.localScale = Vector3.one; // cardbari scale
+        rt.sizeDelta = new Vector2(230, 50); // cardbari chapery x,y
+        rt.anchoredPosition = new Vector2(-265, 145); // cardbari position
+        var txt = CardBar.transform.GetChild(1)?.GetComponent<Text>();
+        if (txt) txt.fontSize = 37; // CardsText i fonti chaper
+        var arr = CardBar.transform.GetChild(2)?.GetComponent<RectTransform>();
+        if (arr) { arr.sizeDelta = new Vector2(60, 70); arr.anchoredPosition = new Vector2(-100, 3); } // UpgradeArrow
     }
+
     public void UpdateCardBarInfo()
     {
-        if(GameObject.Find("CardBar(Clone)"))
-        {
-            Destroy(GameObject.Find("CardBar(Clone)"));
-        }
-        var CardBar = Instantiate(GetFromCurrentDiceField("PowerInfo").transform.GetChild(1), //CardBar = GetFromDiceField("PowerInfo");
-        GetFromInfoPanel("DiceClass_Text").transform.position,
-        Quaternion.identity
-        );
+        var prev = GameObject.Find("CardBar(Clone)");
+        if (prev) Destroy(prev);
 
-        CardBar.transform.SetParent(transform.GetChild(0).transform.GetChild(0).transform);
-        ResizeCardBar(CardBar.gameObject); // uxxel cardbari chapery dinamik kerpov
+        var powerInfo = GetFromCurrentDiceField("PowerInfo");
+        var anchor    = GetFromInfoPanel("DiceClass_Text");
+        if (powerInfo == null || anchor == null) return;
 
+        Transform prefab = (powerInfo.transform.childCount > 1) ? powerInfo.transform.GetChild(1) : null;
+        if (prefab == null) { Debug.LogError("[InfoPanel] PowerInfo child[1] not found"); return; }
+
+        var cardBar = Instantiate(prefab, anchor.transform.position, Quaternion.identity);
+        cardBar.SetParent(transform.GetChild(0).GetChild(0), worldPositionStays: false);
+        ResizeCardBar(cardBar.gameObject);
     }
 
     public void UpdateDiceInfoPanelTextes()
     {
-        GetSlotChild("Attack_Slot").GetComponent<Text>().text = "" + DicePlayerPrefs.GetAttack(diceName);
-        GetSlotChild("ReloadTime_Slot").GetComponent<Text>().text = "" + DicePlayerPrefs.GetReloadTime(diceName);
-        GetSlotChild("ShootSpeed_Slot").GetComponent<Text>().text = "" + DicePlayerPrefs.GetShootSpeed(diceName);
+        var t = GetSlotChild("Attack_Slot");     if (t) t.GetComponent<Text>().text = "" + DicePlayerPrefs.GetAttack(diceName);
+        t = GetSlotChild("ReloadTime_Slot");     if (t) t.GetComponent<Text>().text = "" + DicePlayerPrefs.GetReloadTime(diceName);
+        t = GetSlotChild("ShootSpeed_Slot");     if (t) t.GetComponent<Text>().text = "" + DicePlayerPrefs.GetShootSpeed(diceName);
     }
+
     public void OpenPanel()
     {
-        diceName = GetFromDiceField("DiceNameText").GetComponent<Text>().text;
+        // 1) diceName
+        DiceField = ResolveDiceField();
+        var nameGO = GetFromDiceField("DiceNameText");
+        if (nameGO == null) return;
+        var nameText = nameGO.GetComponent<Text>();
+        if (nameText == null) { Debug.LogError("[InfoPanel] DiceNameText has no Text"); return; }
+        diceName = nameText.text;
 
-        if (PlayerPrefs.GetInt(diceName + "Class") > 14)
+        // 2) класс
+        int cls = DataSave.GetInt(diceName + "Class", 1);
+        var clsGO = GetFromInfoPanel("DiceClass_Text");
+        if (clsGO != null)
         {
-            GetFromInfoPanel("DiceClass_Text").GetComponent<Text>().text = "MAX"; // maxtext
-        }
-        else
-        {
-            GetFromInfoPanel("DiceClass_Text").GetComponent<Text>().text = "Class " + PlayerPrefs.GetInt(diceName + "Class");
+            var clsText = clsGO.GetComponent<Text>();
+            if (clsText) clsText.text = (cls > 14) ? "MAX" : ("Class " + cls);
         }
 
+        // 3) CardBar/статус
         UpdateCardBarInfo();
+
+        // 4) базовые UI-поля
         diamondPrice = DicePlayerPrefs.GetDiamondPrice(diceName);
-        GetFromInfoPanel("Name_Text").GetComponent<Text>().text = GetFromDiceField("DiceNameText").GetComponent<Text>().text;
-        GetFromInfoPanel("Type_Text").GetComponent<Text>().text = GetFromDiceField("TypeNameText").GetComponent<Text>().text;
-        GetFromInfoPanel("Dice_Image").GetComponent<Image>().sprite = GetFromDiceField("DiceButton").GetComponent<Image>().sprite;
-        GetSlotChild("DiamondButton").GetComponent<Text>().text = "" + diamondPrice;
-        // dice type
-        GetSlotChild("Rarity_Slot").GetComponent<Text>().text = "" + DicePlayerPrefs.GetRarity(diceName);
-        GetSlotChild("Attack_Slot").GetComponent<Text>().text = "" + DicePlayerPrefs.GetAttack(diceName);
-        GetSlotChild("Target_Slot").GetComponent<Text>().text = "" + DicePlayerPrefs.GetTarget(diceName);
-        GetSlotChild("ReloadTime_Slot").GetComponent<Text>().text = "" + DicePlayerPrefs.GetReloadTime(diceName);
-        GetSlotChild("ShootSpeed_Slot").GetComponent<Text>().text = "" + DicePlayerPrefs.GetShootSpeed(diceName);
-        
 
-        // UseButton(SetActive), UpgradeButton(position.x), UpgradeButton(SetActive), ContinueButton(SetActive),CoinButton(SetActive),DiamondButton(SetActive)
-        if (GetFromDiceField("Buttons").transform.GetChild(1).GetComponent<Button>().interactable == false)
+        var nameLbl = GetFromInfoPanel("Name_Text");
+        var typeLbl = GetFromInfoPanel("Type_Text");
+        var imgGO   = GetFromInfoPanel("Dice_Image");
+
+        var srcImg  = GetFromDiceField("DiceButton")?.GetComponent<Image>()?.sprite;
+
+        if (nameLbl) nameLbl.GetComponent<Text>().text = diceName;
+
+        // Берём тип/таргет из DataSave, а не из отсутствующего TypeNameText
+        var targetStr = DicePlayerPrefs.GetTarget(diceName);
+        if (typeLbl) typeLbl.GetComponent<Text>().text = targetStr;
+        Debug.Log($"[InfoPanel] Type for '{diceName}' = '{targetStr}' (from DataSave)");
+
+        if (imgGO && srcImg) imgGO.GetComponent<Image>().sprite = srcImg;
+
+
+        var price = GetSlotChild("DiamondButton");
+        if (price) price.GetComponent<Text>().text = "" + diamondPrice;
+
+        // 5) характеристики
+        var c = GetSlotChild("Rarity_Slot");     if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetRarity(diceName);
+        c = GetSlotChild("Attack_Slot");         if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetAttack(diceName);
+        c = GetSlotChild("Target_Slot");         if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetTarget(diceName);
+        c = GetSlotChild("ReloadTime_Slot");     if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetReloadTime(diceName);
+        c = GetSlotChild("ShootSpeed_Slot");     if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetShootSpeed(diceName);
+
+        // 6) Кнопки (логика как у тебя)
+        var buttonsRoot = GetFromDiceField("Buttons")?.transform;
+        bool hasInInventory = false;
+        if (buttonsRoot && buttonsRoot.childCount > 1)
         {
-            IP_ButtonsReposition(false, 0, true, false, false, false); // upgrade - erb uni dice u inventoruma
+            var btn = buttonsRoot.GetChild(1).GetComponent<Button>();
+            if (btn) hasInInventory = (btn.interactable == false);
+        }
+
+        bool isUnlocked = LockDice != null && LockDice.DiceIsUnlocked(diceName);
+        string rarity   = DicePlayerPrefs.GetRarity(diceName);
+
+        if (hasInInventory)
+        {
+            IP_ButtonsReposition(false, 0, true, false, false, false); // upgrade
             UpgradeButtonCheck();
-            print("erb uni dice u inventoruma");
         }
-        else if (GetFromDiceField("Buttons").transform.GetChild(1).GetComponent<Button>().interactable == true && LockDice.DiceIsUnlocked(diceName))
+        else if (!hasInInventory && isUnlocked)
         {
-            IP_ButtonsReposition(true, -170f, true, false, false, false); // use - upgrade  (uni dice ev drac chi inventory)
+            IP_ButtonsReposition(true, -170f, true, false, false, false); // use + upgrade
             UpgradeButtonCheck();
-            print("uni dice ev drac chi inventory");
         }
-        else if (!LockDice.DiceIsUnlocked(diceName))
+        else if (!isUnlocked)
         {
-            if (DicePlayerPrefs.GetRarity(diceName) == "Standard")
-            {
-                IP_ButtonsReposition(false, 0f, false, true, false, false); // continue - locked (erb paka dicey)
-            }
-            else if (DicePlayerPrefs.GetRarity(diceName) == "Exclusive")
-            {
-                IP_ButtonsReposition(false, 0f, false, false, true, false);
-            }
-            else if (DicePlayerPrefs.GetRarity(diceName) == "Legendary")
-            {
-                IP_ButtonsReposition(false, 0f, false, false, false, true);
-            }
-
-            print("erb paka dicey");
+            if (rarity == "Standard")
+                IP_ButtonsReposition(false, 0f, false, true,  false, false); // continue
+            else if (rarity == "Exclusive")
+                IP_ButtonsReposition(false, 0f, false, false, true,  false); // coin
+            else if (rarity == "Legendary")
+                IP_ButtonsReposition(false, 0f, false, false, false, true);  // diamond
         }
 
-        Info_Panel.SetActive(true);
-        Inventory.HideButtons_DIP();
+        if (Info_Panel) Info_Panel.SetActive(true);
+        if (Inventory)  Inventory.HideButtons_DIP();
     }
+
     void IP_ButtonsReposition(bool isActive_UseBtn, float x_UpgradeBtn, bool isActive_UpgradeBtn, bool isActive_ContinueBtn, bool isActive_CoinBtn, bool isActive_DiamondBtn)
     {
-        for (int i = 0; i <= Info_Panel.transform.GetChild(0).transform.childCount - 1; i++)
+        var root = Info_Panel.transform.GetChild(0);
+        for (int i = 0; i < root.childCount; i++)
         {
-            if (Info_Panel.transform.GetChild(0).transform.GetChild(i).name == "UseButton_Panel")
+            var ch = root.GetChild(i);
+            switch (ch.name)
             {
-                GameObject UseButton_Panel = Info_Panel.transform.GetChild(0).transform.GetChild(i).gameObject;
-                UseButton_Panel.SetActive(isActive_UseBtn);
-            }
-            if (Info_Panel.transform.GetChild(0).transform.GetChild(i).name == "UpgradeButton")
-            {
-                GameObject UpgradeButton = Info_Panel.transform.GetChild(0).transform.GetChild(i).gameObject;
-                UpgradeButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(x_UpgradeBtn, UpgradeButton.GetComponent<RectTransform>().anchoredPosition.y);
-                UpgradeButton.SetActive(isActive_UpgradeBtn);
-            }
-            if (Info_Panel.transform.GetChild(0).transform.GetChild(i).name == "ContinueButton")
-            {
-                GameObject ContinueButton = Info_Panel.transform.GetChild(0).transform.GetChild(i).gameObject;
-                ContinueButton.SetActive(isActive_ContinueBtn);
-            }
-            if (Info_Panel.transform.GetChild(0).transform.GetChild(i).name == "CoinButton")
-            {
-                GameObject CoinButton = Info_Panel.transform.GetChild(0).transform.GetChild(i).gameObject;
-                CoinButton.SetActive(isActive_CoinBtn);
-            }
-            if (Info_Panel.transform.GetChild(0).transform.GetChild(i).name == "DiamondButton")
-            {
-                GameObject DiamondButton = Info_Panel.transform.GetChild(0).transform.GetChild(i).gameObject;
-                DiamondButton.SetActive(isActive_DiamondBtn);
+                case "UseButton_Panel":
+                    ch.gameObject.SetActive(isActive_UseBtn);
+                    break;
+                case "UpgradeButton":
+                    var rt = ch.GetComponent<RectTransform>();
+                    if (rt) rt.anchoredPosition = new Vector2(x_UpgradeBtn, rt.anchoredPosition.y);
+                    ch.gameObject.SetActive(isActive_UpgradeBtn);
+                    break;
+                case "ContinueButton":
+                    ch.gameObject.SetActive(isActive_ContinueBtn);
+                    break;
+                case "CoinButton":
+                    ch.gameObject.SetActive(isActive_CoinBtn);
+                    break;
+                case "DiamondButton":
+                    ch.gameObject.SetActive(isActive_DiamondBtn);
+                    break;
             }
         }
     }
 
     public void UpgradeButtonCheck()
     {
+        string rarity = DicePlayerPrefs.GetRarity(diceName);
+        int cls       = DataSave.GetInt(diceName + "Class", 1);
+        int cards     = DataSave.GetInt(diceName + "TotalCards", 0);
 
-        if (DicePlayerPrefs.GetRarity(diceName) == "Standard")
+        bool interact = false;
+        if (cls < 15)
         {
-            if (PlayerPrefs.GetInt(diceName + "Class") < 15 && PlayerPrefs.GetInt(diceName + "TotalCards") >= Cards.standard[PlayerPrefs.GetInt(diceName + "Class") - 1])
-            {
-                GetFromInfoPanel("UpgradeButton").GetComponent<Button>().interactable = true;
-            }
-            else
-            {
-                GetFromInfoPanel("UpgradeButton").GetComponent<Button>().interactable = false;
-            }
+            if (rarity == "Standard")  interact = cards >= Cards.standard [cls - 1];
+            if (rarity == "Exclusive") interact = cards >= Cards.exclusive[cls - 3];
+            if (rarity == "Legendary") interact = cards >= Cards.legendary[cls - 5];
         }
-        else if (DicePlayerPrefs.GetRarity(diceName) == "Exclusive")
-        {
-            if (PlayerPrefs.GetInt(diceName + "Class") < 15 && PlayerPrefs.GetInt(diceName + "TotalCards") >= Cards.exclusive[PlayerPrefs.GetInt(diceName + "Class") - 3])
-            {
-                GetFromInfoPanel("UpgradeButton").GetComponent<Button>().interactable = true;
-            }
-            else
-            {
-                GetFromInfoPanel("UpgradeButton").GetComponent<Button>().interactable = false;
-            }
-        }
-        else if (DicePlayerPrefs.GetRarity(diceName) == "Legendary")
-        {
-            if (PlayerPrefs.GetInt(diceName + "Class") < 15 && PlayerPrefs.GetInt(diceName + "TotalCards") >= Cards.legendary[PlayerPrefs.GetInt(diceName + "Class") - 5])
-            {
-                GetFromInfoPanel("UpgradeButton").GetComponent<Button>().interactable = true;
-            }
-            else
-            {
-                GetFromInfoPanel("UpgradeButton").GetComponent<Button>().interactable = false;
-            }
-        }
+
+        var upg = GetFromInfoPanel("UpgradeButton")?.GetComponent<Button>();
+        if (upg) upg.interactable = interact;
     }
+
     public void UseDiceFromPanel()
     {
+        var holder = DataSave.GetString($"Dice_{diceName}_pos", "");
+        if (string.IsNullOrEmpty(holder))
+        {
+            Debug.LogError($"[InfoPanel] Dice_{diceName}_pos not set");
+            return;
+        }
+        var thisDiceField = GameObject.Find(holder);
+        if (thisDiceField == null) { Debug.LogError($"[InfoPanel] Holder '{holder}' not found"); return; }
 
-        print(diceName);
-        GameObject thisDiceField = GameObject.Find(PlayerPrefs.GetString($"Dice_{diceName}_pos"));
-        thisDiceField.GetComponent<DiceInfoPanel>().UseDice();
+        var dip = thisDiceField.GetComponent<DiceInfoPanel>();
+        if (dip == null) { Debug.LogError("[InfoPanel] DiceInfoPanel not found on holder"); return; }
+
+        dip.UseDice();
         ClosePanel();
     }
+
     public void BuyDiceWithCoin()
     {
         if (Coin.Coins >= 500)
         {
             Coin.Coins -= 500;
-            PlayerPrefs.SetInt($"Dice_{diceName}_isUnlocked", 1);
+            DataSave.SetIntCritical($"Dice_{diceName}_isUnlocked", 1);
             ClosePanel();
-            LockDice.CheckDiceBuyed();
+            if (LockDice) LockDice.CheckDiceBuyed();
         }
         else
         {
-            print("Coin chunes ay harif");
+            Debug.Log("Coin недостаточно");
         }
     }
 
     public void BuyDiceWithDiamond()
     {
-        print(diamondPrice);
         if (Diamond.Diamonds >= diamondPrice)
         {
             Diamond.Diamonds -= diamondPrice;
-            PlayerPrefs.SetInt($"Dice_{diceName}_isUnlocked", 1);
+            DataSave.SetIntCritical($"Dice_{diceName}_isUnlocked", 1);
             ClosePanel();
-            LockDice.CheckDiceBuyed();
+            if (LockDice) LockDice.CheckDiceBuyed();
         }
         else
         {
-            print($"Der petq e havaqes {diamondPrice - Diamond.Diamonds} diamond");
+            Debug.Log($"Нужно ещё {diamondPrice - Diamond.Diamonds} алмазов");
         }
     }
+
     public void ClosePanel()
     {
-        Destroy(GameObject.Find("CardBar(Clone)"));
-        Info_Panel.SetActive(false);
-        PlayerPrefs.SetString("InfoPanelOpened", "null");
+        var cardBar = GameObject.Find("CardBar(Clone)");
+        if (cardBar) Destroy(cardBar);
+        if (Info_Panel) Info_Panel.SetActive(false);
+        DataSave.SetString("InfoPanelOpened", "null");
     }
 }

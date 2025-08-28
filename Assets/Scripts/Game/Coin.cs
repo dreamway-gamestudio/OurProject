@@ -38,7 +38,7 @@ public class Coin : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            AddCoins(coinsPerClick);
+            AddCoins(100);
         }
         
         // Принудительное сохранение для тестирования

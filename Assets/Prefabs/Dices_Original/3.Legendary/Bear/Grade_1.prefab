@@ -235,7 +235,7 @@ MonoBehaviour:
   DiceName: Bear
   Bullet: {fileID: 9115170479169213125, guid: 4417a9e52c0b1f54092d661d6e49b7ff, type: 3}
   ReloadTime: 0.05
-  Attack: 5000
+  Attack: 500
   shootSpeed: 15
   priceWithDiamond: 16
   pinCount: 0
