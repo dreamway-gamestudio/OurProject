@@ -41,7 +41,31 @@ public class ChestSlotsSimpleUI : MonoBehaviour
         switch (s.State)
         {
             case ChestSlotState.Locked:
-                await manager.TryStartUnlockAsync(index);
+                if (manager.HasActiveUnlock())
+                {
+                    // есть активный таймер → сразу открываем за гемы
+                    var def = catalog.ById(manager.Slots[index].ChestId);
+                    int cost = def.GemOpenNowCost;
+
+                    await manager.TryOpenLockedWithGemsAsync(index, gemCost =>
+                    {
+                        // тут твоя логика списания гемов
+                        // пример:
+                        if (true)
+                        {
+                            
+                            Debug.Log($"Spend {gemCost} gems to open instantly");
+                            return true;
+                        }
+                        Debug.Log("Not enough gems!");
+                        return false;
+                    });
+                }
+                else
+                {
+                    // нет активного таймера → обычный запуск
+                    await manager.TryStartUnlockAsync(index);
+                }
                 break;
             case ChestSlotState.Unlocking:
                 await manager.OpenNowWithGemsAsync(index, cost => { Debug.Log($"Spend {cost} gems"); return true; });
@@ -64,6 +88,12 @@ public class ChestSlotsSimpleUI : MonoBehaviour
 
         w.title.text = s.State == ChestSlotState.Empty ? "Empty" : (def?.DisplayName ?? s.ChestId);
         w.state.text = s.State.ToString();
+        // Для Locked показываем полную длительность (из дефиниции)
+        if (s.State == ChestSlotState.Locked && def != null)
+        {
+            w.timer.text = FormatDuration(def.DurationSeconds);
+        }
+
 
         // --- ИКОНКА/ЦВЕТ ---
         if (def != null && def.Icon != null)
@@ -81,9 +111,27 @@ public class ChestSlotsSimpleUI : MonoBehaviour
         if (s.State == ChestSlotState.Unlocking)
         {
             long remain = Math.Max(0, s.FinishAtUnix - ServerClock.UtcNowUnix());
-            w.timer.text = ToHMS(remain);
+            w.timer.text = FormatDuration(remain);
         }
-        else w.timer.text = "";
+        else if (s.State == ChestSlotState.Locked && def != null)
+        {
+            // Показываем длительность сундука до начала
+            w.timer.text = FormatDuration(def.DurationSeconds);
+        }
+        else
+        {
+            w.timer.text = "";
+        }
+
+    }
+    static string FormatDuration(long sec)
+    {
+        if (sec < 60) return $"{sec}s";                   // 45s
+        if (sec < 3600) return $"{sec / 60}m";            // 20m
+        long h = sec / 3600;
+        long m = (sec % 3600) / 60;
+        if (m > 0) return $"{h}h {m}m";                   // 3h 25m
+        return $"{h}h";                                   // 2h
     }
 
     static string ToHMS(long sec) { long h=sec/3600,m=(sec%3600)/60,s=sec%60; return $"{h:D2}:{m:D2}:{s:D2}"; }

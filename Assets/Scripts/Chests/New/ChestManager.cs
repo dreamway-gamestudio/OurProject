@@ -42,6 +42,21 @@ public class ChestManager : MonoBehaviour
         TickApply();
     }
 
+    /// <summary>
+    /// Если уже есть активный Unlocking, а этот слот Locked — открываем его сразу за гемы.
+    /// </summary>
+    public async System.Threading.Tasks.Task<bool> TryOpenLockedWithGemsAsync(
+        int slotIndex, System.Func<int, bool> trySpendGems)
+    {
+        var slot = Slots[slotIndex];
+        if (slot.State != ChestSlotState.Locked) return false;
+        if (!HasActiveUnlock()) return false; // если нет активного таймера → обычный Unlock
+
+        // Используем уже готовую логику мгновенного открытия
+        await OpenNowWithGemsAsync(slotIndex, trySpendGems);
+        return true;
+    }
+    
     void Update()
     {
         // локальный тик раз в кадр — UI шевелится без постоянных запросов
