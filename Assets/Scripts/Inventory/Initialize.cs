@@ -16,19 +16,21 @@ public class Initialize : MonoBehaviour
     // делаем Start асинхронным
     async void Start()
     {
-        Inventory      = GameObject.FindObjectOfType<Inventory>();
-        DicePlayerPrefs= GameObject.FindObjectOfType<DicePlayerPrefs>();
-        Cards          = GameObject.FindObjectOfType<Cards>();
-        LockDice       = GameObject.FindObjectOfType<LockDice>();
-        Chests         = GameObject.FindObjectOfType<Chests>();
-    
-        // 1) один раз заливаем из префабов -> сервер
-        while (!DataSave.IsCloudAvailable())
-            await System.Threading.Tasks.Task.Yield();
+        Inventory      = FindObjectOfType<Inventory>();
+        DicePlayerPrefs= FindObjectOfType<DicePlayerPrefs>();
+        Cards          = FindObjectOfType<Cards>();
+        LockDice       = FindObjectOfType<LockDice>();
+        Chests         = FindObjectOfType<Chests>();
 
+        // Дожидаемся инициализации облака ЕДИНЫМ способом
+        if (CloudDataManager.Instance != null)
+            await CloudDataManager.Instance.WaitUntilReadyAsync();
+        else
+            while (!DataSave.IsCloudAvailable())
+                await System.Threading.Tasks.Task.Yield();
+
+        // Дальше твоя логика
         await DicePlayerPrefs.SeedFromPrefabsOnceAsync();
-
-        // 2) теперь безопасно читать/инициализировать всё остальное
         Inventory.OnlyOneTime();
         Inventory.Init();
         Inventory.InventoryClass();
@@ -36,4 +38,5 @@ public class Initialize : MonoBehaviour
         LockDice.CheckDiceBuyed();
         Chests.SaveChestsDatas();
     }
+
 }
