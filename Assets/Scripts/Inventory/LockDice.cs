@@ -8,10 +8,10 @@ public class LockDice : MonoBehaviour
     bool isUnlocked;
     int totalDices = 30;
     bool forReturn;
-    GameObject BlockImage;
+    GameObject Chain, PowerInfo;
     void Start()
     {
-        //print(DiceIsUnlocked("Eagle"));
+        print(DiceIsUnlocked("Dog"));
     }
 
     public void CheckDiceBuyed()
@@ -31,18 +31,33 @@ public class LockDice : MonoBehaviour
 
                     isUnlocked = DataSave.GetInt($"Dice_{this_name}_isUnlocked") == 1 ? true : false;
                 }
-                if (DiceField.transform.GetChild(j).name == "BlockImage")
+                if (DiceField.transform.GetChild(j).name == "Chain")
                 {
-                    BlockImage = DiceField.transform.GetChild(j).gameObject;
+                    Chain = DiceField.transform.GetChild(j).gameObject;
                     if (i > 5)
                     {
                         if (isUnlocked)
                         {
-                            BlockImage.GetComponent<Image>().enabled = false;
+                            Chain.GetComponent<Image>().enabled = false;
                         }
                         else
                         {
-                            BlockImage.GetComponent<Image>().enabled = true;
+                            Chain.GetComponent<Image>().enabled = true;
+                        }
+                    }
+                }
+                if (DiceField.transform.GetChild(j).name == "PowerInfo")
+                {
+                    PowerInfo = DiceField.transform.GetChild(j).gameObject;
+                    if (i > 5)
+                    {
+                        if (isUnlocked)
+                        {
+                            PowerInfo.SetActive(false);
+                        }
+                        else
+                        {
+                            PowerInfo.SetActive(false);
                         }
                     }
                 }
