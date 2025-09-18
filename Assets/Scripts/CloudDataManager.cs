@@ -44,21 +44,18 @@ public class CloudDataManager : MonoBehaviour
 
     // Один лок — сериализуем все сетевые сохранения (исключает гонки)
     private readonly SemaphoreSlim _saveLock = new(1, 1);
+    // ДОБАВЛЕНО: ожидание готовности для других систем
+    private readonly System.Threading.Tasks.TaskCompletionSource<bool> _readyTcs =
+        new(System.Threading.Tasks.TaskCreationOptions.RunContinuationsAsynchronously);
+
+    public System.Threading.Tasks.Task WaitUntilReadyAsync() => _readyTcs.Task;
 
     void Awake()
     {
-        // УЛУЧШЕНО: более безопасная проверка синглтона
-        if (Instance != null && Instance != this) 
-        { 
-            Destroy(gameObject); 
-            return; 
-        }
-        
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
         DontDestroyOnLoad(gameObject);
         Application.quitting += () => _quit = true;
-        
-        // ДОБАВЛЕНО: запускаем инициализацию через корутину для лучшего контроля
         StartCoroutine(InitializeAsync());
     }
 
@@ -80,45 +77,33 @@ public class CloudDataManager : MonoBehaviour
         }
     }
 
-    private async Task InitializeServices()
+    private async System.Threading.Tasks.Task InitializeServices()
     {
         try
         {
-            // ДОБАВЛЕНО: проверка перед каждым async вызовом
-            if (_destroyed) return;
-            
-            await UnityServices.InitializeAsync();
-            
-            if (_destroyed) return; // проверка после async операции
-            
-            if (!AuthenticationService.Instance.IsSignedIn)
-            {
-                await AuthenticationService.Instance.SignInAnonymouslyAsync();
-            }
+            // ЗАЩИТА: не инициализируем повторно, если уже всё готово
+            if (isInitialized) { _readyTcs.TrySetResult(true); return; }
 
-            if (_destroyed) return;
+            // Не дёргаем InitializeAsync, если сервисы уже подняты
+            if (Unity.Services.Core.UnityServices.State != Unity.Services.Core.ServicesInitializationState.Initialized)
+                await Unity.Services.Core.UnityServices.InitializeAsync();
+
+            if (!Unity.Services.Authentication.AuthenticationService.Instance.IsSignedIn)
+                await Unity.Services.Authentication.AuthenticationService.Instance.SignInAnonymouslyAsync();
 
             isAuthenticated = true;
+
             await LoadAllData();
 
-            if (_destroyed) return;
-
             isInitialized = true;
-            
-            // ДОБАВЛЕНО: проверка перед запуском корутины
-            if (!_destroyed && gameObject != null)
-            {
-                autoSaveCo = StartCoroutine(AutoSaveRoutine());
-            }
-
+            autoSaveCo = StartCoroutine(AutoSaveRoutine());
+            _readyTcs.TrySetResult(true); // <- отдаем готовность всем ожидающим
             DebugLog("CloudDataManager initialized");
         }
         catch (System.Exception e)
         {
-            if (!_destroyed) // логируем только если объект еще жив
-            {
-                Debug.LogError($"Init error: {e.Message}");
-            }
+            _readyTcs.TrySetException(e);
+            Debug.LogError($"Init error: {e.Message}");
         }
     }
 
@@ -452,18 +437,12 @@ public class CloudDataManager : MonoBehaviour
 
     void OnDestroy()
     {
-        _destroyed = true; // ДОБАВЛЕНО: устанавливаем флаг уничтожения
-        
+        _destroyed = true;
         if (autoSaveCo != null) StopCoroutine(autoSaveCo);
         if (delayedSaveCo != null) StopCoroutine(delayedSaveCo);
-        
-        // Очищаем Instance только если это действительно мы
-        if (Instance == this)
-        {
-            Instance = null;
-        }
+        if (Instance == this) Instance = null;
+        _readyTcs.TrySetCanceled(); // <- чтобы никто не завис в ожидании
     }
-
     // ---------- Свойства/утилиты ----------
     public bool IsInitialized => isInitialized && !_destroyed;
     public bool IsAuthenticated => isAuthenticated && !_destroyed;
