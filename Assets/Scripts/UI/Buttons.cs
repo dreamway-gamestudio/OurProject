@@ -10,11 +10,27 @@ public class Buttons : MonoBehaviour
     public void PointerDown()
     {
         print("Down");
-        gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2 (250f, 250f);
+        gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(270f, 105f);
+
+        Transform child = gameObject.transform.Find("ButtonText");
+        if (child != null)
+        {
+            var text = child.GetComponent<Text>();
+            if (text != null)
+                text.fontSize = 42;
+        }
     }
     public void PointerUp()
     {
         print("Up");
-        gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2 (300f, 300f);
+        gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(290f, 110f);
+
+        Transform child = gameObject.transform.Find("ButtonText");
+        if (child != null)
+        {
+            var text = child.GetComponent<Text>();
+            if (text != null)
+                text.fontSize = 45;
+        }
     }
 }

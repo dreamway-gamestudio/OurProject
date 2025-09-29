@@ -440,7 +440,6 @@ public class Chests : MonoBehaviour
     }
     public void CloseChestInfoPanel()
     {
-        ChestInfoPanel.GetComponent<Animator>().Play("ChestInfoPanelClose");
         StartCoroutine(ChestInfoClose());
         CardsCount.Clear();
     }

@@ -23,9 +23,9 @@ public class InfoPanel : MonoBehaviour
         if (Info_Panel != null) Info_Panel.SetActive(false);
 
         Inventory = FindObjectOfType<Inventory>();
-        Cards     = FindObjectOfType<Cards>();
-        LockDice  = FindObjectOfType<LockDice>();
-        Class     = FindObjectOfType<Class>();
+        Cards = FindObjectOfType<Cards>();
+        LockDice = FindObjectOfType<LockDice>();
+        Class = FindObjectOfType<Class>();
     }
 
     void Update()
@@ -50,96 +50,96 @@ public class InfoPanel : MonoBehaviour
     }
 
     // И немного усилим поиск внутри самого InfoPanel (если хочешь):
-public GameObject GetFromInfoPanel(string findingName)
-{
-    var root = transform.GetChild(0).GetChild(0); // обычно Content
-    var t = FindDescendantByName(root, findingName);
-    if (t == null)
-        Debug.LogError($"[InfoPanel] '{findingName}' not found under '{root.name}'. Children: {DumpChildren(root, 2)}");
-    return t?.gameObject;
-}
-// Рекурсивный поиск потомка по имени (ищет на любую глубину)
-Transform FindDescendantByName(Transform root, string name)
-{
-    if (root == null) return null;
-    if (root.name == name) return root;
-    for (int i = 0; i < root.childCount; i++)
+    public GameObject GetFromInfoPanel(string findingName)
     {
-        var res = FindDescendantByName(root.GetChild(i), name);
-        if (res != null) return res;
+        var root = transform.GetChild(0).GetChild(0); // обычно Content
+        var t = FindDescendantByName(root, findingName);
+        if (t == null)
+            Debug.LogError($"[InfoPanel] '{findingName}' not found under '{root.name}'. Children: {DumpChildren(root, 2)}");
+        return t?.gameObject;
     }
-    return null;
-}
-
-// Поиск ближайшего предка, имя которого начинается с префикса
-Transform FindAncestorWithPrefix(Transform t, string prefix)
-{
-    while (t != null && !t.name.StartsWith(prefix)) t = t.parent;
-    return t;
-}
-
-// Для отладки: выводит имена детей до depth уровней
-string DumpChildren(Transform root, int depth)
-{
-    if (root == null) return "<null>";
-    System.Text.StringBuilder sb = new System.Text.StringBuilder();
-    void Recur(Transform x, int d)
+    // Рекурсивный поиск потомка по имени (ищет на любую глубину)
+    Transform FindDescendantByName(Transform root, string name)
     {
-        if (x == null || d < 0) return;
-        sb.Append(x.name);
-        if (d >= 0) sb.Append(" { ");
-        for (int i = 0; i < x.childCount; i++)
+        if (root == null) return null;
+        if (root.name == name) return root;
+        for (int i = 0; i < root.childCount; i++)
         {
-            Recur(x.GetChild(i), d - 1);
-            if (i < x.childCount - 1) sb.Append(", ");
+            var res = FindDescendantByName(root.GetChild(i), name);
+            if (res != null) return res;
         }
-        if (d >= 0) sb.Append(" }");
-    }
-    Recur(root, depth);
-    return sb.ToString();
-}
-    GameObject ResolveDiceField()
-{
-    var opened  = DataSave.GetString("InfoPanelOpened", "");
-    var current = UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject;
-
-    if (opened == "DragSlot")
-    {
-        var go = GameObject.Find(DragSlot.ParentName);
-        Debug.Log($"[InfoPanel] Resolve DiceField by DragSlot: {go?.name}");
-        return go;
-    }
-
-    // Надёжно: поднимаемся к предку "DiceField_*"
-    var holder = FindAncestorWithPrefix(current?.transform, "DiceField_");
-    if (holder == null)
-    {
-        Debug.LogWarning($"[InfoPanel] DiceField ancestor not found from '{current?.name ?? "null"}'. Fallback to parent.");
-        holder = current?.transform?.parent;
-    }
-    Debug.Log($"[InfoPanel] Resolved DiceField: {holder?.name ?? "null"}");
-    return holder?.gameObject;
-}
-
-    public GameObject GetFromDiceField(string findingName)
-{
-    if (DiceField == null) DiceField = ResolveDiceField();
-    var t = FindDescendantByName(DiceField?.transform, findingName);
-    if (t == null)
-    {
-        Debug.LogError($"[InfoPanel] '{findingName}' not found under '{DiceField?.name ?? "null"}'. Children: {DumpChildren(DiceField?.transform, 2)}");
         return null;
     }
-    return t.gameObject;
-}
 
-public GameObject GetFromCurrentDiceField(string findingName)
-{
-    var t = FindDescendantByName(DiceField?.transform, findingName);
-    if (t == null)
-        Debug.LogError($"[InfoPanel] '{findingName}' not found under current '{DiceField?.name ?? "null"}'. Children: {DumpChildren(DiceField?.transform, 2)}");
-    return t?.gameObject;
-}
+    // Поиск ближайшего предка, имя которого начинается с префикса
+    Transform FindAncestorWithPrefix(Transform t, string prefix)
+    {
+        while (t != null && !t.name.StartsWith(prefix)) t = t.parent;
+        return t;
+    }
+
+    // Для отладки: выводит имена детей до depth уровней
+    string DumpChildren(Transform root, int depth)
+    {
+        if (root == null) return "<null>";
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        void Recur(Transform x, int d)
+        {
+            if (x == null || d < 0) return;
+            sb.Append(x.name);
+            if (d >= 0) sb.Append(" { ");
+            for (int i = 0; i < x.childCount; i++)
+            {
+                Recur(x.GetChild(i), d - 1);
+                if (i < x.childCount - 1) sb.Append(", ");
+            }
+            if (d >= 0) sb.Append(" }");
+        }
+        Recur(root, depth);
+        return sb.ToString();
+    }
+    GameObject ResolveDiceField()
+    {
+        var opened = DataSave.GetString("InfoPanelOpened", "");
+        var current = UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject;
+
+        if (opened == "DragSlot")
+        {
+            var go = GameObject.Find(DragSlot.ParentName);
+            Debug.Log($"[InfoPanel] Resolve DiceField by DragSlot: {go?.name}");
+            return go;
+        }
+
+        // Надёжно: поднимаемся к предку "DiceField_*"
+        var holder = FindAncestorWithPrefix(current?.transform, "DiceField_");
+        if (holder == null)
+        {
+            Debug.LogWarning($"[InfoPanel] DiceField ancestor not found from '{current?.name ?? "null"}'. Fallback to parent.");
+            holder = current?.transform?.parent;
+        }
+        Debug.Log($"[InfoPanel] Resolved DiceField: {holder?.name ?? "null"}");
+        return holder?.gameObject;
+    }
+
+    public GameObject GetFromDiceField(string findingName)
+    {
+        if (DiceField == null) DiceField = ResolveDiceField();
+        var t = FindDescendantByName(DiceField?.transform, findingName);
+        if (t == null)
+        {
+            Debug.LogError($"[InfoPanel] '{findingName}' not found under '{DiceField?.name ?? "null"}'. Children: {DumpChildren(DiceField?.transform, 2)}");
+            return null;
+        }
+        return t.gameObject;
+    }
+
+    public GameObject GetFromCurrentDiceField(string findingName)
+    {
+        var t = FindDescendantByName(DiceField?.transform, findingName);
+        if (t == null)
+            Debug.LogError($"[InfoPanel] '{findingName}' not found under current '{DiceField?.name ?? "null"}'. Children: {DumpChildren(DiceField?.transform, 2)}");
+        return t?.gameObject;
+    }
 
     GameObject GetSlotChild(string slotName) // вернуть дочерний "Count" внутри слота
     {
@@ -170,7 +170,7 @@ public GameObject GetFromCurrentDiceField(string findingName)
         if (prev) Destroy(prev);
 
         var powerInfo = GetFromCurrentDiceField("PowerInfo");
-        var anchor    = GetFromInfoPanel("DiceClass_Text");
+        var anchor = GetFromInfoPanel("DiceClass_Text");
         if (powerInfo == null || anchor == null) return;
 
         Transform prefab = (powerInfo.transform.childCount > 1) ? powerInfo.transform.GetChild(1) : null;
@@ -183,9 +183,9 @@ public GameObject GetFromCurrentDiceField(string findingName)
 
     public void UpdateDiceInfoPanelTextes()
     {
-        var t = GetSlotChild("Attack_Slot");     if (t) t.GetComponent<Text>().text = "" + DicePlayerPrefs.GetAttack(diceName);
-        t = GetSlotChild("ReloadTime_Slot");     if (t) t.GetComponent<Text>().text = "" + DicePlayerPrefs.GetReloadTime(diceName);
-        t = GetSlotChild("ShootSpeed_Slot");     if (t) t.GetComponent<Text>().text = "" + DicePlayerPrefs.GetShootSpeed(diceName);
+        var t = GetSlotChild("Attack_Slot"); if (t) t.GetComponent<Text>().text = "" + DicePlayerPrefs.GetAttack(diceName);
+        t = GetSlotChild("ReloadTime_Slot"); if (t) t.GetComponent<Text>().text = "" + DicePlayerPrefs.GetReloadTime(diceName);
+        t = GetSlotChild("ShootSpeed_Slot"); if (t) t.GetComponent<Text>().text = "" + DicePlayerPrefs.GetShootSpeed(diceName);
     }
 
     public void OpenPanel()
@@ -215,9 +215,9 @@ public GameObject GetFromCurrentDiceField(string findingName)
 
         var nameLbl = GetFromInfoPanel("Name_Text");
         var typeLbl = GetFromInfoPanel("Type_Text");
-        var imgGO   = GetFromInfoPanel("Dice_Image");
+        var imgGO = GetFromInfoPanel("Dice_Image");
 
-        var srcImg  = GetFromDiceField("DiceButton")?.GetComponent<Image>()?.sprite;
+        var srcImg = GetFromDiceField("DiceButton")?.GetComponent<Image>()?.sprite;
 
         if (nameLbl) nameLbl.GetComponent<Text>().text = diceName;
 
@@ -233,11 +233,11 @@ public GameObject GetFromCurrentDiceField(string findingName)
         if (price) price.GetComponent<Text>().text = "" + diamondPrice;
 
         // 5) характеристики
-        var c = GetSlotChild("Rarity_Slot");     if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetRarity(diceName);
-        c = GetSlotChild("Attack_Slot");         if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetAttack(diceName);
-        c = GetSlotChild("Target_Slot");         if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetTarget(diceName);
-        c = GetSlotChild("ReloadTime_Slot");     if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetReloadTime(diceName);
-        c = GetSlotChild("ShootSpeed_Slot");     if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetShootSpeed(diceName);
+        var c = GetSlotChild("Rarity_Slot"); if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetRarity(diceName);
+        c = GetSlotChild("Attack_Slot"); if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetAttack(diceName);
+        c = GetSlotChild("Target_Slot"); if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetTarget(diceName);
+        c = GetSlotChild("ReloadTime_Slot"); if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetReloadTime(diceName);
+        c = GetSlotChild("ShootSpeed_Slot"); if (c) c.GetComponent<Text>().text = "" + DicePlayerPrefs.GetShootSpeed(diceName);
 
         // 6) Кнопки (логика как у тебя)
         var buttonsRoot = GetFromDiceField("Buttons")?.transform;
@@ -249,7 +249,7 @@ public GameObject GetFromCurrentDiceField(string findingName)
         }
 
         bool isUnlocked = LockDice != null && LockDice.DiceIsUnlocked(diceName);
-        string rarity   = DicePlayerPrefs.GetRarity(diceName);
+        string rarity = DicePlayerPrefs.GetRarity(diceName);
 
         if (hasInInventory)
         {
@@ -264,15 +264,15 @@ public GameObject GetFromCurrentDiceField(string findingName)
         else if (!isUnlocked)
         {
             if (rarity == "Standard")
-                IP_ButtonsReposition(false, 0f, false, true,  false, false); // continue
+                IP_ButtonsReposition(false, 0f, false, true, false, false); // continue
             else if (rarity == "Exclusive")
-                IP_ButtonsReposition(false, 0f, false, false, true,  false); // coin
+                IP_ButtonsReposition(false, 0f, false, false, true, false); // coin
             else if (rarity == "Legendary")
                 IP_ButtonsReposition(false, 0f, false, false, false, true);  // diamond
         }
 
         if (Info_Panel) Info_Panel.SetActive(true);
-        if (Inventory)  Inventory.HideButtons_DIP();
+        if (Inventory) Inventory.HideButtons_DIP();
     }
 
     void IP_ButtonsReposition(bool isActive_UseBtn, float x_UpgradeBtn, bool isActive_UpgradeBtn, bool isActive_ContinueBtn, bool isActive_CoinBtn, bool isActive_DiamondBtn)
@@ -307,13 +307,13 @@ public GameObject GetFromCurrentDiceField(string findingName)
     public void UpgradeButtonCheck()
     {
         string rarity = DicePlayerPrefs.GetRarity(diceName);
-        int cls       = DataSave.GetInt(diceName + "Class", 1);
-        int cards     = DataSave.GetInt(diceName + "TotalCards", 0);
+        int cls = DataSave.GetInt(diceName + "Class", 1);
+        int cards = DataSave.GetInt(diceName + "TotalCards", 0);
 
         bool interact = false;
         if (cls < 15)
         {
-            if (rarity == "Standard")  interact = cards >= Cards.standard [cls - 1];
+            if (rarity == "Standard") interact = cards >= Cards.standard[cls - 1];
             if (rarity == "Exclusive") interact = cards >= Cards.exclusive[cls - 3];
             if (rarity == "Legendary") interact = cards >= Cards.legendary[cls - 5];
         }
@@ -374,7 +374,13 @@ public GameObject GetFromCurrentDiceField(string findingName)
     {
         var cardBar = GameObject.Find("CardBar(Clone)");
         if (cardBar) Destroy(cardBar);
-        if (Info_Panel) Info_Panel.SetActive(false);
+        if (Info_Panel)
+            StartCoroutine(InfoPanelClose());
         DataSave.SetString("InfoPanelOpened", "null");
+    }
+    IEnumerator InfoPanelClose()
+    {
+        yield return new WaitForSeconds(0.6f);
+        Info_Panel.SetActive(false);
     }
 }
