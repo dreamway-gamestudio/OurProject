@@ -53,7 +53,7 @@ public class LockDice : MonoBehaviour
                     {
                         if (isUnlocked)
                         {
-                            PowerInfo.SetActive(false);
+                            PowerInfo.SetActive(true);
                         }
                         else
                         {

@@ -33,4 +33,29 @@ public class Buttons : MonoBehaviour
                 text.fontSize = 45;
         }
     }
+
+    public void PointerDownDiceField()
+    {
+        gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(100f, 100f);
+
+        Transform child = gameObject.transform.Find("ButtonText");
+        if (child != null)
+        {
+            var text = child.GetComponent<Text>();
+            if (text != null)
+                text.fontSize = 30;
+        }
+    }
+    public void PointerUpDiceField()
+    {
+        gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(110f, 100f);
+
+        Transform child = gameObject.transform.Find("ButtonText");
+        if (child != null)
+        {
+            var text = child.GetComponent<Text>();
+            if (text != null)
+                text.fontSize = 35;
+        }
+    }
 }
